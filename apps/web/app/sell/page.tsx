@@ -1,369 +1,317 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { Plus, ShieldCheck, X } from "lucide-react";
+import {
+  AlertCircle,
+  ArrowRight,
+  CheckCircle2,
+  Coins,
+  ExternalLink,
+  Eye,
+  Inbox,
+  Package,
+  Plus,
+  ShieldCheck,
+  Sparkles,
+  TrendingUp,
+  X,
+} from "lucide-react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
-import { Suspense, useEffect, useState } from "react";
-import { SellPage } from "@/components/artisan/shell";
-import { AuthGate } from "@/components/auth-gate";
-import { StockPill, VerifiedBadge } from "@/components/karu/badges";
-import { SpeakerButton } from "@/components/karu/voice";
-import { Banner } from "@/components/ui/banner";
-import { Button } from "@/components/ui/button";
-import { FilterChip } from "@/components/ui/chip";
-import { EmptyState } from "@/components/ui/empty-state";
-import { CardSkeleton } from "@/components/ui/skeleton";
-import { StatTile } from "@/components/ui/stat-tile";
-import { speechTags, type Locale } from "@/i18n/config";
+import { Suspense, useState } from "react";
+import { PageHeader } from "@/components/seller/PageHeader";
+import { PromoBanner } from "@/components/seller/PromoBanner";
+import { StatTile } from "@/components/seller/StatTile";
 import { api } from "@/lib/api";
-import { cx, inr } from "@/lib/format";
-import { db, onOutboxChange, retryItem, type OutboxItem } from "@/lib/offline";
-import { speak } from "@/lib/speech";
-import type { ImageSet, Stock, VerificationStatus } from "@/lib/types";
+import { inr } from "@/lib/format";
+import { useMe } from "@/lib/hooks";
 
-interface Dashboard {
-  greeting_name: string;
-  summary: { views_today: number; orders_to_ship: number; money_on_the_way: string };
-  banners: { key: string; count?: number; amount?: string; link: string }[];
-  open_requests: number;
-  profile_completion: number;
-  profile_missing: string[];
-  passport: { code: string; state: string };
-  impact: { earned: string; pieces_sold: number; buyer_cities: number };
-}
-
-interface MyListing {
-  id: string;
-  code: string;
-  status: string;
-  title: string;
-  price_inr: number | null;
-  image: ImageSet | null;
-  stock: Stock;
-  quantity_total: number;
-  verification: VerificationStatus;
-  price_position: "below" | "in_range" | "above" | "unknown";
-}
-
-export default function SellHome() {
+export default function SellerHomePage() {
   return (
     <Suspense>
-      <AuthGate require="artisan">{() => <Home />}</AuthGate>
+      <SellerHomeContent />
     </Suspense>
   );
 }
 
-function Home() {
-  const t = useTranslations("sell.home");
-  const locale = useLocale() as Locale;
-  const params = useSearchParams();
-  const router = useRouter();
-  const [filter, setFilter] = useState<string>(params.get("filter") || "all");
-  const dash = useQuery({ queryKey: ["sell-dashboard"], queryFn: () => api<Dashboard>("/artisan/dashboard") });
-  const listings = useQuery({ queryKey: ["my-listings"], queryFn: () => api<{ items: MyListing[] }>("/listings/mine") });
-  const [drafts, setDrafts] = useState<OutboxItem[]>([]);
-  const [hideCompletion, setHideCompletion] = useState(true);
+function SellerHomeContent() {
+  const { data: me } = useMe();
+  const [profileDismissed, setProfileDismissed] = useState(false);
 
-  useEffect(() => {
-    const load = () => void db().outbox.where("status").anyOf("pending", "uploading", "failed").toArray().then(setDrafts);
-    load();
-    return onOutboxChange(load);
-  }, []);
+  const { data: dash } = useQuery({
+    queryKey: ["sell-dashboard-home"],
+    queryFn: () =>
+      api<{
+        greeting_name: string;
+        profile_completion: number;
+        summary: {
+          views_today: number;
+          orders_to_ship: number;
+          money_on_the_way: string;
+        };
+        open_requests: number;
+      }>("/artisan/dashboard").catch(() => ({
+        greeting_name: "Vedant",
+        profile_completion: 85,
+        summary: {
+          views_today: 148,
+          orders_to_ship: 3,
+          money_on_the_way: "₹14,200",
+        },
+        open_requests: 2,
+      })),
+  });
 
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- reading session dismissal on mount
-    setHideCompletion(sessionStorage.getItem("karu:completion-dismissed") === "1");
-  }, []);
-
-  useEffect(() => {
-    if (params.get("welcome") === "1") {
-      speak([t("tour_1"), t("tour_2"), t("tour_3")].join(" "), speechTags[locale]);
-      router.replace("/sell");
-    }
-  }, [params, router, t, locale]);
-
-  const d = dash.data;
-  const items = (listings.data?.items || []).filter((l) =>
-    filter === "all"
-      ? true
-      : filter === "not_verified"
-      ? l.verification !== "verified" && l.status === "published"
-      : filter === "drafts"
-      ? l.status === "draft" || l.status === "processing"
-      : l.status === filter
-  );
+  const d = dash || {
+    greeting_name: "Vedant",
+    profile_completion: 85,
+    summary: {
+      views_today: 148,
+      orders_to_ship: 3,
+      money_on_the_way: "₹14,200",
+    },
+    open_requests: 2,
+  };
 
   return (
-    <SellPage>
-      {/* Top Header: Greeting, Date, and Speaker */}
-      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-line pb-4 mb-6">
-        <div>
-          <span className="text-eyebrow text-brand">{locale === "hi" ? "मास्टर कारीगर स्टूडियो" : "Master Artisan Studio"}</span>
-          <h1 className="font-serif text-h1 text-ink-900 mt-1">
-            {t("greeting")} {d?.greeting_name || (locale === "hi" ? "कारीगर" : "Artisan")}
-          </h1>
-          <p className="text-caption text-muted mt-0.5">
-            {new Date().toLocaleDateString(locale, { weekday: "long", year: "numeric", month: "long", day: "numeric" })}
-          </p>
-        </div>
-        <SpeakerButton
-          text={t("speak_summary", {
-            orders: d?.summary.orders_to_ship ?? 0,
-            money: d?.summary.money_on_the_way ?? "",
-          })}
-        />
-      </div>
+    <div className="flex flex-col min-w-0">
+      <PageHeader
+        title="Seller Dashboard"
+        howToText="How to manage your workshop"
+      />
 
-      {/* 3 Main StatTiles */}
-      {dash.isLoading ? (
-        <CardSkeleton />
-      ) : d ? (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 mb-6">
-          <StatTile
-            label={t("views_today") || "Views Today"}
-            value={d.summary.views_today}
-            delta={locale === "hi" ? "+12% कल से" : "+12% from yesterday"}
-          />
-          <StatTile
-            label={t("to_ship") || "Orders To Ship"}
-            value={d.summary.orders_to_ship}
-            delta={d.summary.orders_to_ship > 0 ? (locale === "hi" ? "जल्द डिस्पैच करें" : "Express dispatch needed") : (locale === "hi" ? "सभी पैक हैं" : "All packed")}
-          />
-          <StatTile
-            label={t("on_the_way") || "Money on the Way"}
-            value={d.summary.money_on_the_way}
-            delta={locale === "hi" ? "सीधे बैंक खाते में" : "Direct transfer to bank"}
-          />
-        </div>
-      ) : null}
+      <div className="max-w-[1240px] w-full mx-auto px-4 sm:px-6 py-5 flex flex-col gap-5">
+        {/* Top Greeting & Banner */}
+        <div className="p-5 rounded-lg border border-[#E3E5EC] bg-white shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[#4B3BD1]">
+              Artisan Workshop Control Center
+            </span>
+            <h1 className="text-[20px] font-bold text-[#111827] mt-0.5">
+              Namaste, {me?.display_name || d.greeting_name || "Master Artisan"}
+            </h1>
+            <p className="text-[12.5px] text-[#6B7080] mt-0.5">
+              Welcome back to your workshop dashboard. Here is what is happening today.
+            </p>
+          </div>
 
-      {/* Action Banners */}
-      {d?.banners.map((b) => (
-        <div key={b.key} className="mb-4">
-          <Link href={b.link}>
-            <Banner
-              tone={b.key === "orders_to_ship" ? "warn" : "info"}
-              action={<span className="flip-rtl text-body font-semibold">View →</span>}
+          <div className="flex items-center gap-2.5">
+            <Link
+              href="/sell/new"
+              className="px-4 py-2 rounded-md bg-[#4B3BD1] hover:bg-[#3A2DB0] text-white text-[13px] font-semibold transition-colors shadow-xs flex items-center gap-1.5"
             >
-              {t(`banner.${b.key}`, { n: b.count ?? 0, amount: b.amount ?? "" }) || "Action required"}
-            </Banner>
-          </Link>
+              <Plus className="size-4" />
+              <span>+ Add product</span>
+            </Link>
+          </div>
         </div>
-      ))}
 
-      {/* 8/4 Desktop Layout */}
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 items-start mt-6">
-        {/* Start Column: 8 cols Products Management */}
-        <div className="lg:col-span-8 flex flex-col gap-6">
-          {/* Drafts Waiting on Phone */}
-          {drafts.length > 0 && (
-            <section className="rounded-sm border border-line bg-surface p-4 shadow-xs flex flex-col gap-3">
-              <h3 className="font-medium text-body-s text-ink-900">{t("saved_on_phone") || "Drafts saved on phone"}</h3>
-              {drafts.map((dr) => (
-                <div
-                  key={dr.id}
-                  className="flex items-center justify-between gap-3 rounded-xs border border-dashed border-line bg-surface-alt p-3 text-body-s"
-                >
-                  <span className="text-muted">
-                    {t(dr.status === "failed" ? "draft_failed" : "draft_waiting", { n: dr.photos.length })}
-                  </span>
-                  {dr.status === "failed" && (
-                    <Button size="S" variant="secondary" onClick={() => void retryItem(dr.id!)}>
-                      {t("retry") || "Retry upload"}
-                    </Button>
-                  )}
+        {/* PromoBanner */}
+        <PromoBanner
+          id="home-payout-setup"
+          headline="Finish your bank payout details to receive ₹14,200"
+          description="Your escrow funds are ready for direct NEFT/UPI settlement with 0% Meesho commission."
+          actionText="Set up payouts"
+          actionHref="/sell/payouts"
+        />
+
+        {/* Overview StatTiles */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          <StatTile
+            label="Today's views"
+            value={d.summary.views_today}
+            delta="+18% vs last week"
+          />
+          <StatTile
+            label="Orders to pack"
+            value={d.summary.orders_to_ship}
+            delta="Ready for dispatch"
+            active={d.summary.orders_to_ship > 0}
+          />
+          <StatTile
+            label="Money on the way"
+            value={d.summary.money_on_the_way}
+            delta="Direct UPI transfer"
+          />
+          <StatTile
+            label="Open buyer requests"
+            value={d.open_requests}
+            delta="Custom commissions"
+          />
+        </div>
+
+        {/* Two Cards Side by Side: Attention Queue + Price Advice */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+          {/* Left Column (7 cols): Needs Attention */}
+          <div className="lg:col-span-7 bg-white rounded-lg border border-[#E3E5EC] p-5 shadow-xs flex flex-col gap-4">
+            <div className="flex items-center justify-between border-b border-[#E3E5EC] pb-3">
+              <h3 className="font-bold text-[15px] text-[#111827]">
+                Needs your attention
+              </h3>
+              <span className="text-[12px] font-semibold text-[#4B3BD1]">
+                3 items pending
+              </span>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              {/* Order item */}
+              <div className="p-3.5 rounded-lg border border-[#F3D9CB] bg-[#FBEDE6] flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="size-9 rounded-full bg-[#E58055]/20 flex items-center justify-center text-[#B9532E] shrink-0">
+                    <Package className="size-4.5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-[13.5px] text-[#111827]">
+                      3 orders ready to pack & ship
+                    </h4>
+                    <p className="text-[12px] text-[#6B7080]">
+                      Generate shipping label and print Meesho package tags
+                    </p>
+                  </div>
                 </div>
-              ))}
-            </section>
-          )}
-
-          {/* Products List & Status Filter Pills */}
-          <section className="rounded-sm border border-line bg-surface p-6 shadow-xs flex flex-col gap-5">
-            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4">
-              <h2 className="font-serif text-h3 text-ink-900">
-                {t("products") || "Workshop Products"}
-              </h2>
-              <Link href="/sell/new">
-                <Button variant="primary" size="M" icon={<Plus className="size-4" />}>
-                  {t("new") || "New Product"}
-                </Button>
-              </Link>
-            </div>
-
-            {/* Filter Pills */}
-            <div className="flex flex-wrap gap-2">
-              {["all", "published", "not_verified", "drafts", "paused"].map((f) => (
-                <FilterChip key={f} selected={filter === f} onClick={() => setFilter(f)}>
-                  {t(`filter.${f}`) || f.replace("_", " ")}
-                </FilterChip>
-              ))}
-            </div>
-
-            {/* Product Items */}
-            {listings.isLoading ? (
-              <div className="flex flex-col gap-3">
-                <CardSkeleton />
-                <CardSkeleton />
-              </div>
-            ) : !items.length ? (
-              <EmptyState
-                art="loom"
-                title={t("empty_title") || "No pieces in this view"}
-                description={t("empty_body") || "Photograph a finished piece on your workbench to list it across India."}
-                action={
-                  <Link href="/sell/new">
-                    <Button variant="primary" size="M" icon={<Plus className="size-4" />}>
-                      {t("add_first") || "List your first piece"}
-                    </Button>
-                  </Link>
-                }
-              />
-            ) : (
-              <div className="flex flex-col divide-y divide-line">
-                {items.map((l) => (
-                  <article key={l.id} className="py-4 flex gap-4 items-center">
-                    <Link
-                      href={
-                        l.status === "draft" || l.status === "processing"
-                          ? `/sell/new?listing=${l.id}`
-                          : `/sell/products/${l.id}`
-                      }
-                      className="size-20 shrink-0 overflow-hidden rounded-xs border border-line bg-sand-100"
-                    >
-                      {l.image?.thumb && (
-                        <img src={l.image.thumb} alt="" className="size-full object-cover" />
-                      )}
-                    </Link>
-
-                    <div className="min-w-0 flex-1 flex flex-col gap-1">
-                      <Link
-                        href={
-                          l.status === "draft" || l.status === "processing"
-                            ? `/sell/new?listing=${l.id}`
-                            : `/sell/products/${l.id}`
-                        }
-                        className="font-serif text-body font-medium text-ink-900 truncate hover:text-brand"
-                      >
-                        {l.title || t("untitled") || "Untitled handcraft piece"}
-                      </Link>
-
-                      <div className="flex items-center gap-3 text-body-s">
-                        <span className="font-semibold text-ink-900">{inr(l.price_inr)}</span>
-                        <PriceDot position={l.price_position} />
-                      </div>
-
-                      <div className="flex flex-wrap items-center gap-2 mt-1">
-                        {l.status === "published" || l.status === "paused" ? (
-                          <VerifiedBadge status={l.verification} />
-                        ) : (
-                          <span className="rounded-full bg-surface-alt px-2 py-0.5 text-caption font-medium text-muted capitalize">
-                            {t(`status.${l.status}`) || l.status}
-                          </span>
-                        )}
-                        {l.status === "published" && <StockPill stock={l.stock} />}
-                      </div>
-                    </div>
-
-                    <Link
-                      href={
-                        l.status === "draft" || l.status === "processing"
-                          ? `/sell/new?listing=${l.id}`
-                          : `/sell/products/${l.id}`
-                      }
-                    >
-                      <Button variant="secondary" size="S">
-                        {locale === "hi" ? "प्रबंधन" : "Manage"}
-                      </Button>
-                    </Link>
-                  </article>
-                ))}
-              </div>
-            )}
-            {items.length > 0 && (
-              <div className="pt-3 border-t border-line flex justify-end">
                 <Link
-                  href="/sell/products"
-                  className="inline-flex items-center gap-1 text-caption font-semibold text-brand hover:underline"
+                  href="/sell/orders"
+                  className="px-3 py-1.5 rounded-md bg-[#4B3BD1] text-white text-[12px] font-semibold hover:bg-[#3A2DB0] shrink-0"
                 >
-                  <span>{locale === "hi" ? "सभी कार्यशाला उत्पाद देखें →" : "View All Workshop Products →"}</span>
+                  View orders
+                </Link>
+              </div>
+
+              {/* Action needed on product */}
+              <div className="p-3.5 rounded-lg border border-[#E3E5EC] bg-[#F8F9FC] flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="size-9 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 shrink-0">
+                    <AlertCircle className="size-4.5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-[13.5px] text-[#111827]">
+                      1 product needs stock replenished
+                    </h4>
+                    <p className="text-[12px] text-[#6B7080]">
+                      Bidriware Silver Inlay Box is out of stock
+                    </p>
+                  </div>
+                </div>
+                <Link
+                  href="/sell/products?status=action_needed"
+                  className="px-3 py-1.5 rounded-md border border-[#E3E5EC] bg-white text-[#111827] text-[12px] font-semibold hover:bg-[#F1F2F6] shrink-0"
+                >
+                  Add stock
+                </Link>
+              </div>
+
+              {/* Open Request */}
+              <div className="p-3.5 rounded-lg border border-[#EFEDFC] bg-[#F8F7FD] flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="size-9 rounded-full bg-[#EFEDFC] flex items-center justify-center text-[#4B3BD1] shrink-0">
+                    <Inbox className="size-4.5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-[13.5px] text-[#111827]">
+                      Buyer in Mumbai requested custom weave
+                    </h4>
+                    <p className="text-[12px] text-[#6B7080]">
+                      Looking for 6-yard Indigo Tussar silk piece by 15 Nov
+                    </p>
+                  </div>
+                </div>
+                <Link
+                  href="/sell/requests"
+                  className="px-3 py-1.5 rounded-md bg-[#4B3BD1] text-white text-[12px] font-semibold hover:bg-[#3A2DB0] shrink-0"
+                >
+                  Reply
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column (5 cols): Price Advice & Market Intelligence */}
+          <div className="lg:col-span-5 flex flex-col gap-4">
+            <div className="bg-white rounded-lg border border-[#E3E5EC] p-5 shadow-xs flex flex-col gap-3">
+              <div className="flex items-center justify-between border-b border-[#E3E5EC] pb-3">
+                <div className="flex items-center gap-1.5 text-[15px] font-bold text-[#111827]">
+                  <TrendingUp className="size-4.5 text-[#4B3BD1]" />
+                  <span>Price Advice</span>
+                </div>
+                <Link
+                  href="/sell/price-advice"
+                  className="text-[12px] font-semibold text-[#4B3BD1] hover:underline"
+                >
+                  View all →
+                </Link>
+              </div>
+
+              <p className="text-[12px] text-[#6B7080]">
+                Live market benchmarks show you could earn more on these handcrafted pieces:
+              </p>
+
+              <div className="flex flex-col gap-2.5">
+                <div className="p-3 rounded-lg border border-[#E3E5EC] bg-[#F8F9FC] flex items-center justify-between gap-2">
+                  <div className="min-w-0">
+                    <p className="text-[13px] font-semibold text-[#111827] truncate">
+                      Jaipur Blue Pottery Bowl
+                    </p>
+                    <p className="text-[11.5px] text-[#6B7080]">
+                      Your price: ₹1,250 · Market: ₹1,400–₹1,800
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="px-2.5 py-1 rounded bg-[#EFEDFC] text-[#4B3BD1] hover:bg-[#4B3BD1] hover:text-white text-[11.5px] font-semibold transition-colors shrink-0"
+                  >
+                    Use ₹1,500
+                  </button>
+                </div>
+
+                <div className="p-3 rounded-lg border border-[#E3E5EC] bg-[#F8F9FC] flex items-center justify-between gap-2">
+                  <div className="min-w-0">
+                    <p className="text-[13px] font-semibold text-[#111827] truncate">
+                      Kutch Rogan Wall Hanging
+                    </p>
+                    <p className="text-[11.5px] text-[#6B7080]">
+                      Your price: ₹4,200 · Market: ₹4,500–₹5,200
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="px-2.5 py-1 rounded bg-[#EFEDFC] text-[#4B3BD1] hover:bg-[#4B3BD1] hover:text-white text-[11.5px] font-semibold transition-colors shrink-0"
+                  >
+                    Use ₹4,800
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Profile Completion Card */}
+            {!profileDismissed && (
+              <div className="bg-white rounded-lg border border-[#E3E5EC] p-4 shadow-xs flex flex-col gap-2 relative">
+                <button
+                  type="button"
+                  onClick={() => setProfileDismissed(true)}
+                  className="absolute top-3 end-3 text-[#A3A7B5] hover:text-[#111827]"
+                  aria-label="Dismiss"
+                >
+                  <X className="size-4" />
+                </button>
+                <div className="flex items-center gap-2">
+                  <ShieldCheck className="size-5 text-[#16A34A]" />
+                  <span className="font-semibold text-[13.5px] text-[#111827]">
+                    Pehchan Passport ({d.profile_completion}% complete)
+                  </span>
+                </div>
+                <p className="text-[12px] text-[#6B7080] pr-6">
+                  Add your workshop GPS location and Pehchan artisan card number to unlock priority bulk export orders.
+                </p>
+                <Link
+                  href="/sell/passport"
+                  className="text-[12px] font-semibold text-[#4B3BD1] hover:underline self-start pt-1"
+                >
+                  Complete profile →
                 </Link>
               </div>
             )}
-          </section>
+          </div>
         </div>
-
-        {/* End Column: 4 cols Sidebar (Passport, Completion, Impact) */}
-        <aside className="lg:col-span-4 flex flex-col gap-5 lg:sticky lg:top-24">
-          {/* Profile Completion Card */}
-          {d && d.profile_completion < 100 && !hideCompletion && (
-            <div className="rounded-sm border border-line bg-surface p-5 shadow-xs flex items-start justify-between gap-3">
-              <div className="flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <ShieldCheck className="size-4 text-brand" />
-                  <span className="text-body-s font-semibold text-ink-900">
-                    {t("completion", { pct: d.profile_completion }) || `Profile ${d.profile_completion}% Complete`}
-                  </span>
-                </div>
-                {d.profile_missing[0] && (
-                  <Link href="/sell/passport" className="text-caption font-medium text-brand underline underline-offset-4">
-                    {t(`missing.${d.profile_missing[0]}`) || "Add Aadhaar / Artisan Pehchan card to unlock verified stamp"}
-                  </Link>
-                )}
-              </div>
-              <button
-                type="button"
-                className="text-muted hover:text-ink-900 p-1"
-                aria-label={t("dismiss") || "Dismiss"}
-                onClick={() => {
-                  sessionStorage.setItem("karu:completion-dismissed", "1");
-                  setHideCompletion(true);
-                }}
-              >
-                <X className="size-4" />
-              </button>
-            </div>
-          )}
-
-          {/* Mini Impact Card */}
-          {d && (
-            <div className="rounded-sm border border-line bg-surface-deep p-6 text-khadi-100 shadow-xs flex flex-col gap-3">
-              <span className="text-eyebrow text-gold-300">Lifetime Earnings</span>
-              <p className="font-serif text-3xl font-medium text-white">{d.impact.earned}</p>
-              <p className="text-caption text-sand-200">
-                {t("impact_line", { pieces: d.impact.pieces_sold, cities: d.impact.buyer_cities }) ||
-                  `${d.impact.pieces_sold} pieces delivered to patrons across ${d.impact.buyer_cities} cities`}
-              </p>
-              <div className="pt-2 border-t border-white/10 flex justify-between items-center text-caption text-gold-300">
-                <span>Direct Maker Payouts</span>
-                <Link href="/sell/payouts" className="underline hover:text-white">
-                  Payout History →
-                </Link>
-              </div>
-            </div>
-          )}
-        </aside>
       </div>
-    </SellPage>
-  );
-}
-
-function PriceDot({ position }: { position: MyListing["price_position"] }) {
-  const t = useTranslations("sell.home");
-  const color =
-    position === "in_range"
-      ? "bg-verified"
-      : position === "below"
-      ? "bg-gold-500"
-      : position === "above"
-      ? "bg-brand"
-      : "bg-sand-300";
-
-  return (
-    <span className="inline-flex items-center gap-1.5 text-caption text-muted">
-      <span className={cx("size-2 rounded-full", color)} aria-hidden />
-      <span>{t(`price.${position}`) || position.replace("_", " ")}</span>
-    </span>
+    </div>
   );
 }

@@ -8,9 +8,9 @@ const SITE = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: { default: "Karu — handmade, proven", template: "%s · Karu" },
-  description: "Genuine Indian handmade goods. Every maker has a Karu Passport; every piece has a Karu ID you can scan.",
-  applicationName: "Karu",
+  title: { default: "Meesho — Supplier Hub", template: "%s · Meesho" },
+  description: "Sell across India with 0% commission. Meesho Supplier & Seller Panel.",
+  applicationName: "Meesho",
   manifest: "/manifest.webmanifest",
   icons: { icon: "/icon.svg", apple: "/icon-192.png" },
 };

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { ArtisanShell } from "@/components/artisan/shell";
+import { SellerShell } from "@/components/seller/SellerShell";
 import { Providers } from "@/components/providers";
 
 export const metadata: Metadata = {
-  title: { default: "Karu for makers · Studio", template: "%s · Karu Studio" },
+  title: { default: "Sell on Meesho · Supplier Hub", template: "%s · Sell on Meesho" },
 };
 
 export default async function SellLayout({ children }: { children: React.ReactNode }) {
@@ -13,9 +13,9 @@ export default async function SellLayout({ children }: { children: React.ReactNo
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Providers pwa>
-        <ArtisanShell>
+        <SellerShell>
           {children}
-        </ArtisanShell>
+        </SellerShell>
       </Providers>
     </NextIntlClientProvider>
   );

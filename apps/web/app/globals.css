@@ -1,7 +1,47 @@
 @import "tailwindcss";
 
 /* Karu "Haat & Heirloom" Design Tokens */
+:root {
+  --panel-sidebar-bg: #1B1F2E;
+  --panel-sidebar-text: #C9CCD6;
+  --panel-sidebar-active-bg: #2A3050;
+  --panel-sidebar-active-text: #FFFFFF;
+  --panel-sidebar-section: #7C8196;
+  --panel-page-bg: #F1F2F6;
+  --panel-card-bg: #FFFFFF;
+  --panel-border: #E3E5EC;
+  --panel-primary: #4B3BD1;
+  --panel-primary-hover: #3A2DB0;
+  --panel-primary-tint: #EFEDFC;
+  --panel-info-strip-bg: #FFF7DD;
+  --panel-info-strip-border: #F3DFA0;
+  --panel-info-icon: #D97706;
+  --panel-banner-bg: #FBEDE6;
+  --panel-error: #DC2626;
+  --panel-success: #16A34A;
+  --panel-text: #111827;
+  --panel-text-muted: #6B7080;
+  --panel-placeholder: #A3A7B5;
+}
+
 @theme {
+  --color-panel-sidebar-bg: var(--panel-sidebar-bg);
+  --color-panel-sidebar-text: var(--panel-sidebar-text);
+  --color-panel-sidebar-active-bg: var(--panel-sidebar-active-bg);
+  --color-panel-sidebar-active-text: var(--panel-sidebar-active-text);
+  --color-panel-sidebar-section: var(--panel-sidebar-section);
+  --color-panel-page-bg: var(--panel-page-bg);
+  --color-panel-card-bg: var(--panel-card-bg);
+  --color-panel-border: var(--panel-border);
+  --color-panel-primary: var(--panel-primary);
+  --color-panel-primary-hover: var(--panel-primary-hover);
+  --color-panel-primary-tint: var(--panel-primary-tint);
+  --color-panel-info-strip-bg: var(--panel-info-strip-bg);
+  --color-panel-info-strip-border: var(--panel-info-strip-border);
+  --color-panel-banner-bg: var(--panel-banner-bg);
+  --color-panel-text: var(--panel-text);
+  --color-panel-text-muted: var(--panel-text-muted);
+
   /* Primitive Ramps (Complete, No Gaps) */
   --color-khadi-50: #fbf8f2;
   --color-khadi-100: #f6f0e6;

@@ -37,21 +37,20 @@ export function Wordmark({
       <div className={cx("flex flex-col", isCentered ? "items-center" : "items-start")}>
         <span
           className={cx(
-            "font-serif tracking-[0.18em] leading-none uppercase font-medium",
-            isCentered ? "text-2xl sm:text-h2" : "text-xl sm:text-2xl",
-            isLight ? "text-white" : "text-text"
+            "font-sans font-extrabold tracking-tight leading-none lowercase text-2xl",
+            isLight ? "text-white" : "text-[#801452]"
           )}
         >
-          Karu
+          meesho
         </span>
         {showTagline && (
           <span
             className={cx(
-              "text-caption font-medium tracking-widest uppercase leading-tight mt-1 transition-opacity",
-              isLight ? "text-gold-300/90" : "text-brand"
+              "text-[10.5px] font-bold tracking-wider uppercase leading-tight mt-0.5",
+              isLight ? "text-[#F43397]" : "text-[#801452]"
             )}
           >
-            Handmade in India · Proven
+            Supplier Hub
           </span>
         )}
       </div>
