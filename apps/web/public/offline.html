@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karu — Offline</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FAF7F2;
+        color: #1E1A16;
+        font-family: system-ui, -apple-system, sans-serif;
+        text-align: center;
+        padding: 24px;
+      }
+      h1 {
+        font-family: Georgia, serif;
+        font-size: 32px;
+        color: #8C3B1E;
+        margin: 12px 0 6px;
+      }
+      p {
+        color: #5C554D;
+        max-width: 24rem;
+        line-height: 1.6;
+        font-size: 15px;
+        margin: 8px 0;
+      }
+      button {
+        min-height: 48px;
+        padding: 0 24px;
+        border: 0;
+        border-radius: 2px;
+        background: #8C3B1E;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 16px;
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: #702E17;
+      }
+      svg {
+        width: 48px;
+        height: 48px;
+        color: #8C3B1E;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="12" cy="12" r="5" />
+        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+      </svg>
+      <h1>karu</h1>
+      <p>You're offline. Your drafts are saved on this phone and will automatically sync when network returns.</p>
+      <p lang="hi">आप ऑफ़लाइन हैं। आपके ड्राफ्ट इस फ़ोन में सुरक्षित हैं और नेटवर्क आते ही सिंक हो जाएंगे।</p>
+      <button onclick="location.reload()">Try again · फिर से कोशिश करें</button>
+    </main>
+  </body>
+</html>

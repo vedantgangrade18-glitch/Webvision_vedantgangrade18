@@ -1,0 +1,1367 @@
+{
+  "_meta": {
+    "review": "Machine-assisted Malayalam. Native review required before pilot. Missing keys fall back to English."
+  },
+  "common": {
+    "language": "ഭാഷ",
+    "close": "അടയ്ക്കുക",
+    "or": "അല്ലെങ്കിൽ",
+    "back": "പിന്നോട്ട്",
+    "time": {
+      "minutes": "{n} മിനിറ്റ് മുമ്പ്",
+      "hours": "{n} മണിക്കൂർ മുമ്പ്",
+      "days": "{n} ദിവസം മുമ്പ്"
+    }
+  },
+  "badge": {
+    "verified": "കാരു പരിശോധിച്ചത്",
+    "checking": "പരിശോധിക്കുന്നു",
+    "revoked": "പരിശോധന പിൻവലിച്ചു",
+    "not_verified": "ഇതുവരെ പരിശോധിച്ചിട്ടില്ല"
+  },
+  "stock": {
+    "in": "ലഭ്യമാണ്",
+    "low": "{n} എണ്ണം മാത്രം ബാക്കി",
+    "out": "സ്റ്റോക്കില്ല"
+  },
+  "proof": {
+    "check": {
+      "handmade_look": {
+        "passed": "കൈകൊണ്ട് നിർമ്മിച്ചതെന്ന് ഉറപ്പാക്കി",
+        "not_passed": "കൈകൊണ്ട് നിർമ്മിച്ചതെന്ന് ഇതുവരെ ഉറപ്പായില്ല",
+        "pending": "ചിത്രങ്ങൾ പരിശോധിക്കുന്നു",
+        "new_maker": "കൈകൊണ്ട് നിർമ്മിച്ചതെന്ന് ഉറപ്പാക്കി",
+        "missing": "ചിത്രങ്ങൾ പരിശോധിച്ചിട്ടില്ല"
+      },
+      "maker_record": {
+        "passed": "കരകൗശലക്കാരന്റെ രേഖ പരിശോധിച്ചു",
+        "not_passed": "കരകൗശലക്കാരന്റെ രേഖ ഇപ്പോഴും രൂപപ്പെടുന്നു",
+        "pending": "കരകൗശലക്കാരന്റെ രേഖ പരിശോധിക്കുന്നു",
+        "new_maker": "കാരുവിൽ പുതിയ കരകൗശലക്കാരൻ — തിരിച്ചറിയലും രേഖയും രൂപപ്പെടുന്നു",
+        "missing": "കരകൗശലക്കാരന്റെ രേഖ പരിശോധിച്ചിട്ടില്ല"
+      },
+      "making_video": {
+        "passed": "നിർമ്മാണ വീഡിയോ പരിശോധിച്ചു",
+        "not_passed": "നിർമ്മാണ വീഡിയോ ഉറപ്പായില്ല",
+        "pending": "നിർമ്മാണ വീഡിയോ പരിശോധിക്കുന്നു",
+        "new_maker": "നിർമ്മാണ വീഡിയോ പരിശോധിച്ചു",
+        "missing": "ഇതുവരെ നിർമ്മാണ വീഡിയോ ഇല്ല"
+      }
+    },
+    "photos_original": "ഈ ചിത്രങ്ങൾ ഇന്റർനെറ്റിൽ മറ്റെവിടെയും കണ്ടെത്തിയില്ല",
+    "registry": {
+      "pehchan": "പെഹ്ചാൻ കരകൗശല കാർഡ് {date} ന് പരിശോധിച്ചു",
+      "gi": "GI അംഗീകൃത ഉപയോക്താവ്, {date} ന് പരിശോധിച്ചു"
+    },
+    "how_we_checked": "ഞങ്ങൾ എങ്ങനെ പരിശോധിച്ചു",
+    "how": {
+      "l1": "ചിത്രങ്ങൾ: കൈപ്പണിയുടെ അടയാളങ്ങൾ നോക്കി; ചിത്രങ്ങൾ കരകൗശലക്കാരന്റേതാണെന്ന് ഇന്റർനെറ്റിൽ തിരഞ്ഞ് ഉറപ്പാക്കി.",
+      "l2": "കരകൗശലക്കാരൻ: അവരുടെ തിരിച്ചറിയലും കാരുവിലെ ചരിത്രവും പരിശോധിച്ചു.",
+      "l3": "നിർമ്മാണ വീഡിയോ: കരകൗശലക്കാരൻ ഇതേ വസ്തു നിർമ്മിക്കുന്നത് ചിത്രീകരിച്ചു; രീതിയും മൗലികതയും പരിശോധിച്ചു.",
+      "no_scores": "ഞങ്ങൾ ശതമാനം കാണിക്കില്ല: വസ്തു കാരു പരിശോധിച്ചതാണ്, അല്ലെങ്കിൽ ഇതുവരെ അല്ല."
+    }
+  },
+  "price": {
+    "handmade_range": "കൈത്തറി / കൈപ്പണി {low}–{high}",
+    "replica_range": "പരിശോധിക്കാത്തത് / വിപണി {low}–{high}",
+    "sources": "ഇന്റർനെറ്റിൽ നിന്നുള്ള {n} ഉദാഹരണങ്ങൾ കാണുക",
+    "demo_sources": "ഓഫ്‌ലൈൻ പരീക്ഷണത്തിനുള്ള ഡെമോ ഡാറ്റ."
+  },
+  "card": {
+    "wish": "ഇഷ്ടത്തിൽ ചേർക്കുക",
+    "unwish": "ഇഷ്ടത്തിൽ നിന്ന് മാറ്റുക"
+  },
+  "maker": {
+    "listen": "{name} ന്റെ ശബ്ദം കേൾക്കുക",
+    "follow": "പിന്തുടരുക",
+    "following": "പിന്തുടരുന്നു",
+    "passport_verified": "പരിശോധിച്ച കാരു പാസ്‌പോർട്ട്",
+    "passport_unverified": "കാരു പാസ്‌പോർട്ട്",
+    "years": "{n} വർഷമായി ഈ കല",
+    "under_review": "ഈ കരകൗശലക്കാരന്റെ അക്കൗണ്ട് അവലോകനത്തിലാണ്.",
+    "story_translated": "ലഭ്യമായിടത്ത് കഥ നിങ്ങളുടെ ഭാഷയിൽ.",
+    "member_since": "{date} മുതൽ കാരുവിൽ",
+    "pieces": "{n} വസ്തുക്കൾ",
+    "reviews": "വാങ്ങുന്നവർ പറയുന്നത്",
+    "meet": "Meet the Maker"
+  },
+  "passport": {
+    "title": "കാരു പാസ്‌പോർട്ട്",
+    "member_since": "{date} മുതൽ അംഗം",
+    "state": {
+      "verified": "പരിശോധിച്ചത്",
+      "unverified": "ഇതുവരെ പരിശോധിച്ചിട്ടില്ല",
+      "suspended": "അവലോകനത്തിൽ"
+    },
+    "id": "പാസ്‌പോർട്ട് ഐഡി",
+    "since": "അംഗമായത്",
+    "verified_pieces": "പരിശോധിച്ച വസ്തുക്കൾ",
+    "rating": "റേറ്റിംഗ്",
+    "save_image": "പാസ്‌പോർട്ട് ചിത്രം സേവ് ചെയ്യുക"
+  },
+  "voice": {
+    "speak": "ടൈപ്പ് ചെയ്യുന്നതിന് പകരം സംസാരിക്കുക",
+    "stop": "നിർത്തുക",
+    "not_caught": "വ്യക്തമായി കേട്ടില്ല. ദയവായി വീണ്ടും പറയുക.",
+    "unsupported": "ഈ ഫോണിൽ സംസാരിച്ച് എഴുതാനാകില്ല. ദയവായി ടൈപ്പ് ചെയ്യുക.",
+    "permission_denied": "സംസാരിക്കാൻ മൈക്ക് അനുമതി നൽകുക.",
+    "read_aloud": "വായിച്ചു കേൾപ്പിക്കുക"
+  },
+  "nav": {
+    "main": "പ്രധാനം",
+    "home": "ഹോം",
+    "categories": "വിഭാഗങ്ങൾ",
+    "crafts": "കലകൾ",
+    "how_verification_works": "പരിശോധന എങ്ങനെ",
+    "search": "തിരയുക",
+    "search_placeholder": "സാരി, കസവ്, ആറന്മുള കണ്ണാടി തിരയുക…",
+    "sell": "കാരുവിൽ വിൽക്കുക",
+    "wishlist": "ഇഷ്ടം",
+    "cart": "കാർട്ട്",
+    "account": "അക്കൗണ്ട്",
+    "login": "ലോഗിൻ",
+    "suggest_product": "വസ്തു",
+    "suggest_craft": "കല",
+    "suggest_category": "വിഭാഗം",
+    "shop": "Shop",
+    "regions": "Regions",
+    "makers": "Makers",
+    "track_order": "Track order",
+    "view_all": "View all",
+    "announce": {
+      "1": "Every piece carries a Karu ID",
+      "2": "Free shipping across India",
+      "3": "Paid directly to the maker"
+    }
+  },
+  "home": {
+    "eyebrow": "കൈകൊണ്ട് നിർമ്മിച്ചത്, തെളിവോടെ",
+    "title": "ഓരോ വസ്തുവിനും പിന്നിലെ കൈകളെ പരിചയപ്പെടൂ.",
+    "subtitle": "യഥാർത്ഥ ഇന്ത്യൻ കരകൗശല വസ്തുക്കൾ, ഓരോന്നിനും സ്വന്തം കാരു ഐഡി.",
+    "cta_verified": "കാരു പരിശോധിച്ചവ വാങ്ങുക",
+    "cta_sell": "ഞാൻ ഒരു കരകൗശലക്കാരനാണ്",
+    "made_by": "{name} · {place}",
+    "categories": "വിഭാഗമനുസരിച്ച് വാങ്ങുക",
+    "see_all": "എല്ലാം കാണുക",
+    "verified_picks": "കാരു പരിശോധിച്ച തിരഞ്ഞെടുപ്പുകൾ",
+    "meet_makers": "കരകൗശലക്കാരെ പരിചയപ്പെടൂ",
+    "recently_viewed": "അടുത്തിടെ കണ്ടവ",
+    "how": {
+      "passport": {
+        "title": "A passport for every maker",
+        "body": "Real people, real places. Every artisan on Karu has one Karu Passport."
+      },
+      "karu_id": {
+        "title": "A Karu ID for every piece",
+        "body": "Each physical piece gets its own ID, checked by photos, records and a making video."
+      },
+      "scan": {
+        "title": "Scan to see the proof",
+        "body": "The QR on the tag opens the piece's story and proof — no app needed."
+      }
+    },
+    "verified_picks_sub": "Proven handmade, with the making video to show it",
+    "gi_tag": "GI-tagged craft",
+    "explore_craft": "Explore the craft",
+    "meet_makers_sub": "The people and places behind the pieces",
+    "new_collection": "New collection",
+    "rooted_heritage": "Rooted in heritage",
+    "rooted_sub": "Centuries of generational mastery preserved without synthetic shortcut.",
+    "shop_region": "Shop by region",
+    "shop_region_sub": "Direct from India's most celebrated heritage craft clusters.",
+    "explore_cluster": "Explore cluster",
+    "patron_voices": "Words from our patrons",
+    "patron_sub": "Cherished by patrons who value living craft and proven origins.",
+    "verified_purchase": "Verified purchase",
+    "karu_edit": "The Karu Edit",
+    "explore_edit": "Explore edit",
+    "impact": {
+      "artisans": "makers on Karu",
+      "pieces_verified": "pieces Karu Verified",
+      "paid": "paid to makers, 0% commission",
+      "clusters": "craft clusters",
+      "more": "See our impact"
+    }
+  },
+  "kid": {
+    "verified": "കാരു പരിശോധിച്ചത്",
+    "revoked": "പരിശോധന പിൻവലിച്ചു",
+    "checking": "പരിശോധിക്കുന്നു",
+    "not_verified": "ഇതുവരെ പരിശോധിച്ചിട്ടില്ല",
+    "verified_line": "{craft} · {place} ൽ {name} കൈകൊണ്ട് നിർമ്മിച്ചത്",
+    "handmade": "കൈകൊണ്ട് നിർമ്മിച്ചത്",
+    "sold_notice": "ഈ വസ്തു {date} ന് വിറ്റുപോയി. ആരെങ്കിലും ഇത് പുതിയതെന്ന് പറഞ്ഞ് വിൽക്കുന്നുണ്ടെങ്കിൽ റിപ്പോർട്ട് ചെയ്യുക.",
+    "owned_by_you": "ഈ വസ്തു നിങ്ങളുടേതാണ് — കരകൗശലക്കാരനെ പിന്തുണച്ചതിന് നന്ദി.",
+    "the_maker": "കരകൗശലക്കാരൻ",
+    "passport_verified": "പരിശോധിച്ച കാരു പാസ്‌പോർട്ട്",
+    "passport_unverified": "കാരു പാസ്‌പോർട്ട്",
+    "years": "{n} വർഷമായി ഈ കല",
+    "listen": "{name} ന്റെ ശബ്ദം കേൾക്കുക",
+    "maker_under_review": "കരകൗശലക്കാരന്റെ അക്കൗണ്ട് അവലോകനത്തിലാണ്.",
+    "the_proof": "തെളിവ്",
+    "watch_making": "നിർമ്മാണം കാണുക",
+    "revoked_body": "പുതിയ തെളിവിനെത്തുടർന്ന് {date} ന് കാരു പരിശോധന പിൻവലിച്ചു.",
+    "journey": "ഈ വസ്തുവിന്റെ യാത്ര",
+    "event": {
+      "made": "നിർമ്മിച്ചു",
+      "listed": "കാരുവിൽ ചേർത്തു",
+      "sold": "വിറ്റു · {city}",
+      "delivered": "എത്തിച്ചു",
+      "returned": "കരകൗശലക്കാരന് തിരികെ",
+      "owned": "അന്നുമുതൽ ഉടമസ്ഥത"
+    },
+    "market": "ഇത്തരം കൈപ്പണി വസ്തുക്കൾ {low}–{high} നിരക്കിൽ വിൽക്കുന്നു.",
+    "buy": "കാരുവിൽ വാങ്ങുക · {price}",
+    "request_again": "വീണ്ടും നിർമ്മിക്കാൻ അഭ്യർത്ഥിക്കുക",
+    "more_from": "{name} ന്റെ കൂടുതൽ വസ്തുക്കൾ",
+    "report": "ഈ കാരു ഐഡിയിലെ പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുക",
+    "report_sent": "നന്ദി — ഞങ്ങളുടെ ടീം പരിശോധിക്കും.",
+    "report_prompt": "ഈ വസ്തുവിലോ ടാഗിലോ എന്താണ് പ്രശ്നം?",
+    "how_it_works": "കാരു പരിശോധന എങ്ങനെ",
+    "not_found_title": "ഈ കാരു ഐഡി കണ്ടെത്തിയില്ല",
+    "not_found_body": "ടാഗിലെ കോഡ് പരിശോധിക്കുക. യഥാർത്ഥ കാരു ഐഡി KRU-8F29A1QZ പോലെയാണ്.",
+    "go_home": "കാരുവിലേക്ക് പോകുക"
+  },
+  "auth": {
+    "title": "ലോഗിൻ അല്ലെങ്കിൽ സൈൻ അപ്പ്",
+    "subtitle": "ഫോണിലോ ഇമെയിലിലോ ഒരു കോഡ് — പാസ്‌വേഡ് ഇല്ല.",
+    "tab_phone": "ഫോൺ",
+    "tab_email": "ഇമെയിൽ",
+    "phone_label": "മൊബൈൽ നമ്പർ",
+    "phone_hint": "SMS വഴി 6 അക്ക കോഡ് അയയ്ക്കും.",
+    "email_label": "ഇമെയിൽ",
+    "send_code": "കോഡ് അയയ്ക്കുക",
+    "code_sent_to": "{dest} ലേക്ക് കോഡ് അയച്ചു",
+    "use_code": "പൂരിപ്പിക്കുക",
+    "dev_code": "ഡെമോ മോഡ്: നിങ്ങളുടെ കോഡ് {code}",
+    "code_label": "6 അക്ക കോഡ്",
+    "verify": "തുടരുക",
+    "change": "നമ്പർ മാറ്റുക",
+    "resend_in": "{s} സെക്കൻഡിൽ വീണ്ടും അയയ്ക്കാം",
+    "resend": "കോഡ് വീണ്ടും അയയ്ക്കുക",
+    "or": "അല്ലെങ്കിൽ",
+    "errors": {
+      "generic": "എന്തോ പിശക് സംഭവിച്ചു. വീണ്ടും ശ്രമിക്കുക.",
+      "invalid_phone": "മൊബൈൽ നമ്പർ പരിശോധിക്കുക.",
+      "otp_expired": "കോഡിന്റെ കാലാവധി കഴിഞ്ഞു. പുതിയ കോഡ് ചോദിക്കുക.",
+      "otp_wrong_code": "ഈ കോഡ് ശരിയല്ല.",
+      "wrong_code_left": "ഈ കോഡ് ശരിയല്ല. {n} ശ്രമങ്ങൾ ബാക്കി.",
+      "otp_too_many_attempts": "വളരെയധികം ശ്രമങ്ങൾ. പുതിയ കോഡ് ചോദിക്കുക.",
+      "resend_too_soon": "അൽപ്പം കാത്തിരുന്ന് പുതിയ കോഡ് ചോദിക്കുക.",
+      "invalid_email": "Please check the email address.",
+      "otp_rate_limited": "Too many codes asked for. Please wait a few minutes.",
+      "otp_not_found": "Please ask for a code first.",
+      "account_suspended": "This account is under review. Please contact Karu help.",
+      "account_deleted": "This account was deleted."
+    },
+    "terms_note": "By continuing you agree to Karu's Terms and Privacy Policy."
+  },
+  "errors_page": {
+    "not_found": "പേജ് കണ്ടെത്തിയില്ല",
+    "not_found_body": "നിങ്ങൾ തിരയുന്ന പേജ് നിലവിലില്ല.",
+    "home": "ഹോമിലേക്ക് പോകുക"
+  },
+  "sell": {
+    "nav": {
+      "badge": "കരകൗശലക്കാരൻ",
+      "main": "കരകൗശല മെനു",
+      "home": "ഹോം",
+      "orders": "ഓർഡറുകൾ",
+      "new": "പുതിയ വസ്തു ചേർക്കുക",
+      "requests": "അഭ്യർത്ഥനകൾ",
+      "me": "ഞാൻ",
+      "notifications": "അറിയിപ്പുകൾ",
+      "products": "Products",
+      "payouts": "Payouts",
+      "passport": "Passport",
+      "help": "Help & Academy",
+      "settings": "Settings",
+      "new_product": "New Product",
+      "studio_title": "Artisan Workshop Studio",
+      "view_shop": "View Public Shop"
+    },
+    "queue": {
+      "offline": "നെറ്റ്‌വർക്കിനായി കാത്തിരിക്കുന്നു — {n} വസ്തുക്കൾ ഫോണിൽ സുരക്ഷിതം",
+      "uploading": "{n} വസ്തുക്കൾ അപ്‌ലോഡ് ചെയ്യുന്നു…",
+      "failed": "{n} വസ്തുക്കൾ അപ്‌ലോഡ് ആയില്ല",
+      "retry": "വീണ്ടും ശ്രമിക്കുക"
+    },
+    "start": {
+      "progress": "ഘട്ടം {n} / {total}",
+      "language_title": "നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക",
+      "language_body": "എപ്പോൾ വേണമെങ്കിലും മാറ്റാം.",
+      "phone_title": "നിങ്ങളുടെ മൊബൈൽ നമ്പർ",
+      "phone_body": "ഒരു കോഡ് അയയ്ക്കും. പാസ്‌വേഡ് വേണ്ട.",
+      "name_q": "നിങ്ങളുടെ പേര് എന്താണ്?",
+      "name_hint": "ഈ പേര് വാങ്ങുന്നവർ കാണും. മൈക്ക് അമർത്തി സംസാരിക്കാം.",
+      "dob_q": "നിങ്ങളുടെ ജനനത്തീയതി",
+      "dob_hint": "ഇത് കാരു മാത്രം കാണും. വിൽക്കാൻ 18 വയസ്സോ അതിൽ കൂടുതലോ വേണം.",
+      "craft_q": "നിങ്ങൾ എന്താണ് നിർമ്മിക്കുന്നത്?",
+      "craft_other": "മറ്റെന്തെങ്കിലും? പറയുക അല്ലെങ്കിൽ എഴുതുക",
+      "location_q": "നിങ്ങൾ എവിടെയാണ് ജോലി ചെയ്യുന്നത്?",
+      "use_location": "എന്റെ സ്ഥലം ഉപയോഗിക്കുക",
+      "location_saved": "സ്ഥലം സേവ് ചെയ്തു ✓",
+      "location_privacy": "കാരു ഏകദേശ സ്ഥലം (ഏകദേശം 1 കി.മീ.) മാത്രം സൂക്ഷിക്കും. വാങ്ങുന്നവർ ഗ്രാമവും ജില്ലയും മാത്രം കാണും.",
+      "pin": "പിൻ കോഡ്",
+      "village": "ഗ്രാമം അല്ലെങ്കിൽ പട്ടണം",
+      "district": "ജില്ല",
+      "state": "സംസ്ഥാനം",
+      "consent_title": "തുടങ്ങുന്നതിന് മുമ്പ്",
+      "consent_1": "നിങ്ങളുടെ ചിത്രങ്ങൾ, ശബ്ദം, നിർമ്മാണ വീഡിയോകൾ എന്നിവ ഉപയോഗിച്ച് ജോലി കൈകൊണ്ടുള്ളതാണെന്ന് പരിശോധിക്കും.",
+      "consent_2": "വാങ്ങുന്നവർക്ക് നിങ്ങളുടെ ചിത്രങ്ങൾ, പേര്, ഗ്രാമം, കഥ, വീഡിയോകൾ കാണാം.",
+      "consent_3": "നിങ്ങൾ തിരഞ്ഞെടുത്താൽ മാത്രം ശബ്ദം കാണിക്കും — എപ്പോൾ വേണമെങ്കിലും മറയ്ക്കാം.",
+      "consent_4": "കാരുവിൽ വിൽക്കുന്നത് സൗജന്യം. മുഴുവൻ 100% വിലയും നിങ്ങൾക്ക്.",
+      "consent_full": "പൂർണ്ണ വാചകം:",
+      "terms": "നിബന്ധനകൾ",
+      "privacy": "സ്വകാര്യത",
+      "agree": "ഞാൻ സമ്മതിക്കുന്നു — എന്റെ കാരു പാസ്‌പോർട്ട് ഉണ്ടാക്കുക",
+      "next": "അടുത്തത്",
+      "skip": "ഇപ്പോൾ ഒഴിവാക്കുക",
+      "errors": {
+        "must_be_adult": "കാരുവിൽ വിൽക്കാൻ 18 വയസ്സോ അതിൽ കൂടുതലോ വേണം.",
+        "invalid_state": "പട്ടികയിൽ നിന്ന് നിങ്ങളുടെ സംസ്ഥാനം തിരഞ്ഞെടുക്കുക.",
+        "already_artisan": "നിങ്ങൾക്ക് ഇതിനകം കാരു പാസ്‌പോർട്ട് ഉണ്ട്.",
+        "location_denied": "സ്ഥലം കണ്ടെത്താനായില്ല. പിൻ കോഡ് എഴുതുക.",
+        "generic": "എന്തോ പിശക് സംഭവിച്ചു. വീണ്ടും ശ്രമിക്കുക."
+      }
+    },
+    "home": {
+      "greeting": "നമസ്കാരം,",
+      "speak_summary": "അയയ്ക്കേണ്ട {orders} ഓർഡറുകൾ. വഴിയിലുള്ള പണം: {money}.",
+      "views_today": "ഇന്നത്തെ കാഴ്ചകൾ",
+      "to_ship": "അയയ്ക്കാനുള്ളവ",
+      "on_the_way": "വഴിയിൽ",
+      "banner": {
+        "orders_to_ship": "{n} ഓർഡറുകൾ അയയ്ക്കാനുണ്ട്",
+        "add_making_video": "{n} വസ്തുക്കൾ പരിശോധിക്കാൻ നിർമ്മാണ വീഡിയോ ചേർക്കുക",
+        "finish_payout_setup": "{amount} ലഭിക്കാൻ പേയ്‌മെന്റ് അക്കൗണ്ട് ചേർക്കുക"
+      },
+      "completion": "നിങ്ങളുടെ പ്രൊഫൈൽ {pct}% പൂർത്തിയായി",
+      "missing": {
+        "photo": "നിങ്ങളുടെ ഫോട്ടോ ചേർക്കുക",
+        "story": "നിങ്ങളുടെ കഥ പറയുക",
+        "crafts": "നിങ്ങളുടെ കല ചേർക്കുക",
+        "years": "പരിചയ വർഷങ്ങൾ ചേർക്കുക",
+        "location": "ജില്ലയും സംസ്ഥാനവും ചേർക്കുക",
+        "languages": "നിങ്ങളുടെ ഭാഷകൾ ചേർക്കുക",
+        "aadhaar": "ആധാർ പരിശോധിക്കുക",
+        "payout": "പേയ്‌മെന്റിനായി ബാങ്ക് അല്ലെങ്കിൽ UPI ചേർക്കുക",
+        "name": "നിങ്ങളുടെ പേര് ചേർക്കുക"
+      },
+      "dismiss": "മറയ്ക്കുക",
+      "saved_on_phone": "നിങ്ങളുടെ ഫോണിൽ സുരക്ഷിതം",
+      "draft_waiting": "{n} ചിത്രങ്ങൾ അപ്‌ലോഡിനായി കാത്തിരിക്കുന്നു",
+      "draft_failed": "അപ്‌ലോഡ് പൂർത്തിയായില്ല ({n} ചിത്രങ്ങൾ)",
+      "retry": "വീണ്ടും ശ്രമിക്കുക",
+      "products": "നിങ്ങളുടെ വസ്തുക്കൾ",
+      "new": "പുതിയത്",
+      "filter": {
+        "all": "എല്ലാം",
+        "published": "ലൈവ്",
+        "not_verified": "പരിശോധിക്കാത്തവ",
+        "drafts": "ഡ്രാഫ്റ്റുകൾ",
+        "paused": "നിർത്തിയവ"
+      },
+      "empty_title": "നിങ്ങളുടെ ആദ്യ വസ്തു ചേർക്കുക",
+      "empty_body": "ഒരു ചിത്രവും ഒരു പറഞ്ഞ സന്ദേശവും — ബാക്കി കാരു ചെയ്യും.",
+      "add_first": "നിങ്ങളുടെ ആദ്യ വസ്തു ചേർക്കുക",
+      "untitled": "പുതിയ വസ്തു",
+      "status": {
+        "draft": "ഡ്രാഫ്റ്റ്",
+        "processing": "തയ്യാറാകുന്നു",
+        "paused": "നിർത്തി"
+      },
+      "your_impact": "നിങ്ങളുടെ വരുമാനം",
+      "impact_line": "{pieces} വസ്തുക്കൾ, {cities} നഗരങ്ങളിലെ വാങ്ങുന്നവർക്ക് വിറ്റു",
+      "price": {
+        "below": "വിപണിയേക്കാൾ കുറവ്",
+        "in_range": "ശരിയായ വില",
+        "above": "വിപണിയേക്കാൾ കൂടുതൽ",
+        "unknown": "ഇതുവരെ വില വിവരം ഇല്ല"
+      },
+      "tour_1": "കാരുവിലേക്ക് സ്വാഗതം. നിങ്ങളുടെ കാരു പാസ്‌പോർട്ട് തയ്യാർ.",
+      "tour_2": "വസ്തു ചേർക്കാൻ വലിയ പ്ലസ് ബട്ടൺ അമർത്തുക. ഫോട്ടോ എടുത്ത് സ്വന്തം വാക്കുകളിൽ പറയുക.",
+      "tour_3": "കാരു പരിശോധനയ്ക്കായി അത് നിർമ്മിക്കുന്ന ചെറിയ വീഡിയോ ചേർക്കുക."
+    },
+    "new": {
+      "photos_title": "നിങ്ങളുടെ വസ്തുവിന്റെ ഫോട്ടോ എടുക്കുക",
+      "tip_daylight": "പകൽ വെളിച്ചം",
+      "tip_plain": "ലളിതമായ പശ്ചാത്തലം",
+      "tip_whole": "മുഴുവൻ വസ്തുവും കാണിക്കുക",
+      "too_dark": "ഒരു ഫോട്ടോ ഇരുണ്ടതാണ്. കഴിയുമെങ്കിൽ പകൽ വെളിച്ചത്തിൽ വീണ്ടും എടുക്കുക.",
+      "photo_n": "ഫോട്ടോ {n}",
+      "main_photo": "പ്രധാനം",
+      "remove_photo": "ഫോട്ടോ നീക്കുക",
+      "take_photo": "ഫോട്ടോ എടുക്കുക",
+      "add_photo": "ഫോട്ടോ ചേർക്കുക",
+      "from_gallery": "ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക",
+      "photo_count": "{max} ൽ {n} ഫോട്ടോകൾ",
+      "next": "അടുത്തത്",
+      "voice_title": "ഇതിനെക്കുറിച്ച് പറയൂ",
+      "voice_prompt": "ഇത് എന്താണ്, എന്തുകൊണ്ട് നിർമ്മിച്ചു, നിർമ്മിക്കാൻ എത്ര സമയമെടുത്തു, വില എത്ര എന്ന് പറയുക.",
+      "too_short": "ഇത് വളരെ ചെറുതായിരുന്നു. കുറച്ചുകൂടി പറയുക.",
+      "mic_denied": "മൈക്ക് അനുമതി നൽകുക, അല്ലെങ്കിൽ ഒഴിവാക്കി ടൈപ്പ് ചെയ്യുക.",
+      "record": "സംസാരിച്ചു തുടങ്ങുക",
+      "stop": "നിർത്തുക",
+      "tap_to_speak": "മൈക്ക് അമർത്തി സംസാരിക്കുക",
+      "tap_to_stop": "നിർത്താൻ അമർത്തുക",
+      "recorded": "റെക്കോർഡ് ചെയ്തു",
+      "we_heard": "ഞങ്ങൾ കേട്ടത്",
+      "rerecord": "വീണ്ടും റെക്കോർഡ് ചെയ്യുക",
+      "continue": "തുടരുക",
+      "skip_voice": "ഒഴിവാക്കുക — ഞാൻ എഴുതി പറയാം",
+      "sending": "കാരുവിലേക്ക് അയയ്ക്കുന്നു…",
+      "sending_body": "നിങ്ങളുടെ ചിത്രങ്ങളും ശബ്ദവും അപ്‌ലോഡ് ചെയ്യുന്നു.",
+      "waiting_network": "നെറ്റ്‌വർക്കിനായി കാത്തിരിക്കുന്നു",
+      "saved_on_phone": "നിങ്ങളുടെ ഫോണിൽ സുരക്ഷിതം. നെറ്റ്‌വർക്ക് വന്നാൽ സ്വയം അപ്‌ലോഡ് ആകും.",
+      "go_home": "ഹോമിലേക്ക് പോകുക",
+      "listening": "കാരു കേൾക്കുന്നു…",
+      "step": {
+        "listening": "നിങ്ങളുടെ സന്ദേശം കേൾക്കുന്നു",
+        "understanding": "നിങ്ങളുടെ വസ്തു മനസ്സിലാക്കുന്നു",
+        "writing": "ലിസ്റ്റിംഗ് എഴുതുന്നു",
+        "enhancing_photos": "ചിത്രങ്ങൾ വൃത്തിയാക്കുന്നു",
+        "checking_prices": "വിപണി വിലകൾ നോക്കുന്നു"
+      },
+      "usually_20s": "സാധാരണ 20 സെക്കൻഡിൽ താഴെ എടുക്കും.",
+      "open": "തുറക്കുക",
+      "already_published": "ഈ വസ്തു ഇതിനകം ലൈവ് ആണ്."
+    },
+    "review": {
+      "title": "നിങ്ങളുടെ ലിസ്റ്റിംഗ് പരിശോധിക്കുക",
+      "manual_fallback": "നിങ്ങളുടെ സന്ദേശത്തിൽ നിന്ന് എല്ലാം പൂരിപ്പിക്കാനായില്ല. താഴെയുള്ള വിവരങ്ങൾ പരിശോധിക്കുക — ഏത് ഫീൽഡിലും സംസാരിക്കാം.",
+      "note": {
+        "price": "വില കേട്ടില്ല. വീണ്ടും പറയുക അല്ലെങ്കിൽ എഴുതുക.",
+        "dimensions": "അളവുകൾ പറയുക.",
+        "material": "ഇത് എന്തുകൊണ്ട് നിർമ്മിച്ചു എന്ന് പറയുക.",
+        "technique": "ഇത് എങ്ങനെ നിർമ്മിച്ചു എന്ന് പറയുക.",
+        "generic": "ദയവായി പരിശോധിക്കുക: {field}"
+      },
+      "photos": "ചിത്രങ്ങൾ",
+      "cleaned_up": "വൃത്തിയാക്കി",
+      "photos_note": "കാരു നിങ്ങളുടെ ഫോട്ടോയിൽ നിന്ന് 5 കാറ്റലോഗ് ചിത്രങ്ങൾ സൃഷ്ടിക്കുന്നു, അവയിൽ ഏതും നിങ്ങൾക്ക് നീക്കംചെയ്യാം. സ്ഥിരീകരണത്തിനും തെളിവിനുമായി യഥാർത്ഥ ഫോട്ടോകൾ സൂക്ഷിക്കുന്നു.",
+      "catalogue_images": "കാറ്റലോഗ് ചിത്രങ്ങൾ",
+      "creating_catalogue_images": "കാറ്റലോഗ് ചിത്രങ്ങൾ തയ്യാറാക്കുന്നു…",
+      "remove_image": "ചിത്രം നീക്കംചെയ്യുക",
+      "catalogue_note": "നിങ്ങളുടെ ഫോട്ടോയിൽ നിന്ന് സൃഷ്ടിച്ച മാർക്കറ്റ്പ്ലേസ് ശൈലിയിലുള്ള കാറ്റലോഗ് ചിത്രങ്ങൾ. ആവശ്യമില്ലാത്ത ചിത്രം നിങ്ങൾക്ക് നീക്കംചെയ്യാം.",
+      "no_catalogue_images": "ഇതുവരെ കാറ്റലോഗ് ചിത്രങ്ങളൊന്നുമില്ല.",
+      "generate_now": "കാറ്റലോഗ് ചിത്രങ്ങൾ സൃഷ്ടിക്കുക",
+      "name": "വസ്തുവിന്റെ പേര്",
+      "description": "വിവരണം",
+      "details": "വിശദാംശങ്ങൾ",
+      "attr": {
+        "material": "വസ്തു",
+        "technique": "നിർമ്മാണ രീതി",
+        "dye": "ചായത്തിന്റെ ഉറവിടം",
+        "colour": "നിറം",
+        "length_m": "നീളം (മീ.)",
+        "height_cm": "ഉയരം (സെ.മീ.)",
+        "time_to_make_days": "നിർമ്മിക്കാൻ എടുത്ത ദിവസം",
+        "care": "പരിപാലനം",
+        "finish": "ഫിനിഷ്",
+        "width_m": "വീതി (മീറ്റർ)",
+        "width_cm": "വീതി (സെ.മീ)",
+        "depth_cm": "ആഴം (സെ.മീ)",
+        "weight_g": "ഭാരം (ഗ്രാം)"
+      },
+      "please_check": "ദയവായി പരിശോധിക്കുക",
+      "more_details": "കൂടുതൽ വിവരങ്ങൾ ചേർക്കുക",
+      "badge_nudge": "{craft} GI ടാഗുള്ള കലയാണ്. ബാഡ്ജിനായി ഇത് എങ്ങനെ ഉണ്ടാക്കി എന്ന് പറയൂ.",
+      "category": "വിഭാഗം",
+      "choose": "തിരഞ്ഞെടുക്കുക…",
+      "craft": "കല",
+      "no_craft": "പ്രത്യേക കല ഇല്ല",
+      "price": "നിങ്ങളുടെ വില",
+      "price_missing": "നിങ്ങളുടെ വില എഴുതുക.",
+      "use_price": "{price} ആക്കുക",
+      "never_changes": "കാരു ഒരിക്കലും നിങ്ങളുടെ വില മാറ്റില്ല. തീരുമാനം നിങ്ങളുടേത്.",
+      "what_you_said": "നിങ്ങൾ പറഞ്ഞത്",
+      "browser_transcript": "നിങ്ങൾ പറഞ്ഞത് ഫോൺ എഴുതി.",
+      "regenerate": "വീണ്ടും എഴുതുക",
+      "regenerate_all": "എല്ലാം വീണ്ടും എഴുതുക",
+      "regen_left": "ഇന്ന് {n} തവണ കൂടി",
+      "regen_limit": "ഇന്നത്തെ പരിധി കഴിഞ്ഞു. നിങ്ങൾക്ക് സ്വയം തിരുത്താം.",
+      "looks_good": "ശരിയാണ്",
+      "error": "സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
+    },
+    "video": {
+      "add": "നിർമ്മാണ വീഡിയോ ചേർക്കുക",
+      "guide_hands": "ഈ വസ്തുവിൽ പണിയെടുക്കുന്ന നിങ്ങളുടെ കൈകൾ കാണിക്കുക.",
+      "guide_tools": "തറി, ചക്രം അല്ലെങ്കിൽ ഉപകരണങ്ങൾ കാണിക്കുക.",
+      "guide_end": "അവസാനം പൂർത്തിയായ വസ്തു വ്യക്തമായി കാണിക്കുക.",
+      "guide_children": "ദയവായി കുട്ടികൾ പണിയെടുക്കുന്നത് കാണിക്കരുത്.",
+      "uploading": "അപ്‌ലോഡ് ചെയ്യുന്നു… {pct}%",
+      "too_long": "വീഡിയോ 5 മിനിറ്റിൽ കൂടുതലാണ്.",
+      "too_short": "വീഡിയോ 20 സെക്കൻഡിൽ കുറവാണ്.",
+      "too_big": "വീഡിയോ ഫയൽ വളരെ വലുതാണ്.",
+      "errors": {
+        "video_too_short": "വീഡിയോ 20 സെക്കൻഡിൽ കുറവാണ്.",
+        "media_too_long": "വീഡിയോ 5 മിനിറ്റിൽ കൂടുതലാണ്.",
+        "unsupported_media_type": "ഈ ഫയൽ പ്രവർത്തിക്കില്ല. ഫോൺ ക്യാമറയിൽ റെക്കോർഡ് ചെയ്യുക.",
+        "upload": "അപ്‌ലോഡ് നിന്നു. വീണ്ടും ശ്രമിച്ചാൽ തുടരും.",
+        "generic": "വീഡിയോ ചേർക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
+      }
+    },
+    "final": {
+      "title": "ഏതാണ്ട് കഴിഞ്ഞു",
+      "quantity": "നിങ്ങളുടെ പക്കൽ എത്രയെണ്ണം തയ്യാറുണ്ട്?",
+      "quantity_hint": "ഓരോ വസ്തുവിനും സ്വന്തം കാരു ഐഡി ലഭിക്കും.",
+      "less": "ഒന്ന് കുറയ്ക്കുക",
+      "more": "ഒന്ന് കൂട്ടുക",
+      "returnable": "തിരികെ നൽകൽ സ്വീകരിക്കുക",
+      "returnable_nudge": "തിരികെ നൽകൽ സ്വീകരിക്കുന്ന ലിസ്റ്റിംഗുകൾ സാധാരണ കൂടുതൽ വിൽക്കുന്നു. തീരുമാനം നിങ്ങളുടേത്.",
+      "get_verified": "കാരു പരിശോധന നേടുക",
+      "get_verified_body": "ഇത് നിർമ്മിക്കുന്ന ചെറിയ വീഡിയോ ചേർക്കുക. പരിശോധിച്ച വസ്തുക്കൾ കൂടുതൽ വിലയ്ക്ക് വിൽക്കുന്നു.",
+      "video_added": "നിർമ്മാണ വീഡിയോ ചേർത്തു ✓",
+      "video_later": "ഇത് പിന്നീടും ചേർക്കാം.",
+      "publish": "പ്രസിദ്ധീകരിക്കുക",
+      "incomplete": "ആദ്യം പേര്, വില, വിഭാഗം, ഫോട്ടോ ചേർക്കുക.",
+      "error": "പ്രസിദ്ധീകരിക്കാനായില്ല."
+    },
+    "published": {
+      "title": "നിങ്ങളുടെ {title} ലൈവ് ആണ്!",
+      "ids_created": "{n} കാരു ഐഡികൾ സൃഷ്ടിച്ചു",
+      "checking": "പരിശോധിക്കുന്നു… സാധാരണ 10 മിനിറ്റിൽ താഴെ.",
+      "add_video_hint": "കാരു പരിശോധനയ്ക്കായി നിർമ്മാണ വീഡിയോ ചേർക്കുക.",
+      "share": "WhatsApp, Instagram ൽ പങ്കിടുക",
+      "get_verified": "കാരു പരിശോധന നേടുക",
+      "home": "ഹോമിലേക്ക് മടങ്ങുക"
+    },
+    "product": {
+      "paused": "നിർത്തി",
+      "tab": {
+        "overview": "സംഗ്രഹം",
+        "price": "വില ഉപദേശം",
+        "verification": "പരിശോധന",
+        "edit": "തിരുത്തുക",
+        "stock": "സ്റ്റോക്കും കാരു ഐഡിയും",
+        "share": "പങ്കിടുക",
+        "more": "കൂടുതൽ"
+      },
+      "price": "വില",
+      "in_stock": "സ്റ്റോക്കിൽ",
+      "views": "കാഴ്ചകൾ",
+      "sold": "വിറ്റവ",
+      "revenue": "വിൽപ്പന",
+      "zero_commission": "മുഴുവൻ 100% നിങ്ങൾക്ക് — കാരു കമ്മീഷൻ എടുക്കില്ല.",
+      "view_public": "വാങ്ങുന്നയാളായി കാണുക",
+      "no_advice": "ഇതുവരെ വില ഉപദേശം ഇല്ല.",
+      "updated": "പുതുക്കിയത്: {ago}",
+      "price_updated": "വില മാറ്റി",
+      "use_price": "{price} ആക്കുക",
+      "you_decide": "കാരു ഒരിക്കലും നിങ്ങളുടെ വില മാറ്റില്ല. തീരുമാനം നിങ്ങളുടേത്.",
+      "add_stock": "കൂടുതൽ വസ്തുക്കൾ ചേർക്കുക",
+      "add": "ചേർക്കുക",
+      "ids_created": "{n} കാരു ഐഡികൾ സൃഷ്ടിച്ചു",
+      "print_tags": "QR ടാഗുകൾ പ്രിന്റ് ചെയ്യുക (PDF)",
+      "unit": {
+        "available": "ലഭ്യം",
+        "reserved": "മാറ്റിവച്ചത്",
+        "sold": "വിറ്റു",
+        "returned": "തിരികെ വന്നു",
+        "retired": "നീക്കി"
+      },
+      "relist": "വീണ്ടും വിൽപ്പനയ്ക്ക്",
+      "pause": "നിർത്തുക (വാങ്ങുന്നവരിൽ നിന്ന് മറയ്ക്കുക)",
+      "resume": "വാങ്ങുന്നവർക്ക് വീണ്ടും കാണിക്കുക",
+      "pause_note": "നിർത്തിയ വസ്തുക്കൾ തിരയലിൽ കാണില്ല. വിറ്റ വസ്തുക്കളുടെ കാരു ഐഡി എന്നും സാധുവായിരിക്കും.",
+      "syndicate_title": "മറ്റിടങ്ങളിലും ലിസ്റ്റ് ചെയ്യുക… (ഡെമോ)",
+      "syndicate_body": "കാരുവിന്റെ ഏജന്റ് ഡെമോ അക്കൗണ്ടിൽ ഫോം പൂരിപ്പിക്കുന്നു.",
+      "portal": {
+        "ondc": "ONDC",
+        "indiamart": "IndiaMART",
+        "coop": "സഹകരണ സ്റ്റോർ"
+      },
+      "watch_live": "ഏജന്റിനെ ലൈവായി കാണുക",
+      "open": "തുറക്കുക",
+      "syndicated": "വിജയകരമായി ലിസ്റ്റ് ചെയ്തു",
+      "syndication_failed": "ഏജന്റിന് പൂർത്തിയാക്കാനായില്ല.",
+      "delete": "വസ്തു നീക്കുക",
+      "delete_confirm": "ഈ വസ്തു കാരുവിൽ നിന്ന് നീക്കും. വിറ്റ വസ്തുക്കളുടെ കാരു ഐഡി എന്നും നിലനിൽക്കും.",
+      "delete_yes": "അതെ, നീക്കുക"
+    },
+    "verify": {
+      "l1": "ചിത്ര പരിശോധന",
+      "l2": "നിങ്ങളുടെ രേഖ",
+      "l3": "നിർമ്മാണ വീഡിയോ",
+      "l1_ok": "നിങ്ങളുടെ ചിത്രങ്ങളിൽ കൈപ്പണി കാണാം.",
+      "l1_needs_work": "പകൽ വെളിച്ചത്തിൽ, അടുത്തുനിന്ന് വീണ്ടും ഫോട്ടോ എടുക്കുക.",
+      "l1_under_review": "ഞങ്ങളുടെ ടീം നോക്കുന്നു.",
+      "l1_pending": "പരിശോധനയ്ക്കായി കാത്തിരിക്കുന്നു",
+      "l2_ok": "നിങ്ങളുടെ രേഖ നല്ലതാണ്.",
+      "l2_needs_work": "രേഖ ശക്തമാക്കാൻ ആധാർ പരിശോധിക്കുക.",
+      "l2_under_review": "ഞങ്ങളുടെ ടീം നോക്കുന്നു.",
+      "l2_pending": "പരിശോധനയ്ക്കായി കാത്തിരിക്കുന്നു",
+      "l3_ok": "നിങ്ങളുടെ നിർമ്മാണ വീഡിയോ നല്ലതാണ്.",
+      "l3_needs_work": "പണിയെടുക്കുന്ന കൈകളും പൂർത്തിയായ വസ്തുവും കാണിക്കുക.",
+      "l3_missing": "ഇത് നിർമ്മിക്കുന്ന ചെറിയ വീഡിയോ ചേർക്കുക.",
+      "l3_under_review": "ഞങ്ങളുടെ ടീം നോക്കുന്നു.",
+      "l3_pending": "പരിശോധനയ്ക്കായി കാത്തിരിക്കുന്നു",
+      "checking": "പരിശോധിക്കുന്നു… സാധാരണ 10 മിനിറ്റിൽ താഴെ.",
+      "verified_body": "{date} ന് പരിശോധിച്ചു.",
+      "under_review": "ഈ വസ്തു പരിശോധിക്കാനായില്ല. ഞങ്ങളുടെ ടീം നോക്കും.",
+      "whats_missing": "അടുത്തത് എന്ത് ചെയ്യണം",
+      "go": "പോകുക",
+      "add_video": "നിർമ്മാണ വീഡിയോ ചേർക്കുക",
+      "replace_video": "പുതിയ വീഡിയോ ചേർക്കുക",
+      "video_received": "വീഡിയോ ലഭിച്ചു — വീണ്ടും പരിശോധിക്കുന്നു",
+      "try_again": "വീണ്ടും ശ്രമിക്കുക",
+      "errors": {
+        "already_checking": "പരിശോധന ഇതിനകം നടക്കുന്നു.",
+        "generic": "എന്തോ പിശക് സംഭവിച്ചു."
+      }
+    },
+    "share": {
+      "publish_first": "പങ്കിടാൻ ആദ്യം പ്രസിദ്ധീകരിക്കുക.",
+      "format": {
+        "9x16": "WhatsApp സ്റ്റാറ്റസ്",
+        "4x5": "Instagram പോസ്റ്റ്",
+        "clean": "വൃത്തിയുള്ള ചിത്രം"
+      },
+      "preview": "പ്രിവ്യൂ",
+      "clean_note": "Amazon, Flipkart ചിത്രങ്ങളിൽ QR സ്വീകരിക്കില്ല. പ്രിന്റ് ചെയ്ത QR ടാഗ് പാഴ്സലിൽ വയ്ക്കുക.",
+      "share_whatsapp": "പങ്കിടുക",
+      "download": "ചിത്രം ഡൗൺലോഡ് ചെയ്യുക",
+      "instagram_hint": "Instagram ന്: ചിത്രം ഡൗൺലോഡ് ചെയ്ത് Instagram ൽ നിന്ന് പോസ്റ്റ് ചെയ്യുക.",
+      "copy": "പകർത്തുക",
+      "copied": "ലിങ്ക് പകർത്തി"
+    },
+    "orders": {
+      "title": "ഓർഡറുകൾ",
+      "tab": {
+        "to_pack": "പാക്ക് ചെയ്യാൻ",
+        "shipped": "അയച്ചവ",
+        "delivered": "എത്തിയവ",
+        "returns": "തിരികെ"
+      },
+      "empty": {
+        "to_pack": "ഇപ്പോൾ പാക്ക് ചെയ്യാൻ ഓർഡറില്ല",
+        "shipped": "വഴിയിൽ ഒന്നുമില്ല",
+        "delivered": "ഇതുവരെ ഒരു ഓർഡറും എത്തിയിട്ടില്ല",
+        "returns": "തിരികെ നൽകലുകൾ ഇല്ല"
+      },
+      "buyer": "{name} · {city}",
+      "attach_tag": "കാരു ഐഡി ടാഗ് {id} ഒപ്പം പാക്ക് ചെയ്യുക",
+      "address": "അയയ്ക്കേണ്ട വിലാസം",
+      "shipped_on": "{date} ന് അയച്ചു",
+      "mark_shipped": "അയച്ചു",
+      "courier": "കൊറിയർ",
+      "tracking": "ട്രാക്കിംഗ് നമ്പർ",
+      "optional": "ഐച്ഛികം",
+      "confirm_shipped": "അതെ, അയച്ചു",
+      "shipped_toast": "രേഖപ്പെടുത്തി. വാങ്ങുന്നയാളെ അറിയിച്ചു.",
+      "got_it_back": "തിരികെ കിട്ടി",
+      "return_received": "നന്ദി. റീഫണ്ട് തുടങ്ങി.",
+      "return": {
+        "requested": "തിരികെ നൽകാൻ അഭ്യർത്ഥന",
+        "received": "തിരികെ ലഭിച്ചു",
+        "refunded": "റീഫണ്ട് ചെയ്തു",
+        "rejected": "തിരികെ നൽകൽ നിരസിച്ചു"
+      },
+      "reason": {
+        "not_as_described": "പറഞ്ഞതുപോലെയല്ല",
+        "damaged": "കേടായി എത്തി",
+        "changed_mind": "മനസ്സ് മാറി",
+        "other": "മറ്റുള്ളവ"
+      }
+    },
+    "payouts": {
+      "title": "പേയ്‌മെന്റുകൾ",
+      "on_the_way": "വഴിയിൽ",
+      "paid": "നിങ്ങൾക്ക് ലഭിച്ചത്",
+      "account": "പണം എവിടെ ലഭിക്കും",
+      "status": {
+        "none": "ചേർത്തിട്ടില്ല",
+        "pending_kyc": "പരിശോധിക്കുന്നു",
+        "active": "സജീവം",
+        "failed": "ശ്രദ്ധിക്കുക"
+      },
+      "reason": {
+        "upi_settlement_not_enabled": "UPI പേയ്‌മെന്റുകൾ ഉടൻ. ഇപ്പോൾ ബാങ്ക് അക്കൗണ്ട് ചേർക്കുക.",
+        "other": "നിങ്ങളുടെ വിവരങ്ങൾ പരിശോധിക്കുക അല്ലെങ്കിൽ കാരു സഹായവുമായി ബന്ധപ്പെടുക."
+      },
+      "change": "അക്കൗണ്ട് മാറ്റുക",
+      "hold_note": "വാങ്ങുന്നയാൾക്ക് വസ്തു ലഭിച്ച് തിരികെ നൽകൽ കാലാവധി കഴിയുന്നതുവരെ പണം സുരക്ഷിതമായിരിക്കും.",
+      "history": "പേയ്‌മെന്റുകൾ",
+      "none": "ഇതുവരെ പേയ്‌മെന്റ് ഇല്ല",
+      "release_on": "{date} ന് അയയ്ക്കും",
+      "p_status": {
+        "awaiting_account": "അക്കൗണ്ടിനായി കാത്തിരിക്കുന്നു",
+        "created": "തയ്യാറാകുന്നു",
+        "on_hold": "ഡെലിവറി വരെ തടഞ്ഞുവച്ചു",
+        "released": "അയച്ചു",
+        "settled": "നിങ്ങളുടെ അക്കൗണ്ടിൽ",
+        "failed": "പരാജയപ്പെട്ടു",
+        "reversed": "വാങ്ങുന്നയാൾക്ക് തിരികെ"
+      },
+      "bank": "ബാങ്ക് അക്കൗണ്ട്",
+      "vpa": "UPI ഐഡി",
+      "vpa_hint": "ഉദാഹരണം: name@okaxis",
+      "acc": "അക്കൗണ്ട് നമ്പർ",
+      "ifsc": "IFSC കോഡ്",
+      "ifsc_hint": "പാസ്ബുക്കിലോ ചെക്കിലോ അച്ചടിച്ച 11 അക്ഷര-അക്കങ്ങൾ.",
+      "holder": "അക്കൗണ്ടിലെ പേര്",
+      "save": "സേവ് ചെയ്യുക",
+      "saved": "സേവ് ചെയ്തു",
+      "check_details": "വിവരങ്ങൾ പരിശോധിക്കുക.",
+      "error": "സേവ് ചെയ്യാനായില്ല.",
+      "kyc_note": "ഞങ്ങളുടെ പേയ്‌മെന്റ് പങ്കാളി PAN അല്ലെങ്കിൽ ആധാർ ചോദിച്ചേക്കാം."
+    },
+    "passport": {
+      "title": "നിങ്ങളുടെ കാരു പാസ്‌പോർട്ട്",
+      "kyc_done": "ആധാർ പരിശോധിച്ചു. നന്ദി!",
+      "kyc_failed": "ആധാർ പരിശോധന പൂർത്തിയായില്ല. വീണ്ടും ശ്രമിക്കുക.",
+      "suspended": "നിങ്ങളുടെ പാസ്‌പോർട്ട് അവലോകനത്തിലാണ്.",
+      "you_are_verified": "നിങ്ങളുടെ പാസ്‌പോർട്ട് പരിശോധിച്ചതാണ്",
+      "how_to_verify": "പരിശോധിച്ച പാസ്‌പോർട്ട് എങ്ങനെ നേടാം",
+      "check_aadhaar": "ആധാർ പരിശോധന",
+      "and_one_of": "കൂടാതെ ഇവയിൽ ഒന്ന്:",
+      "check_pehchan": "പെഹ്ചാൻ കാർഡ് പരിശോധന",
+      "check_product": "കുറഞ്ഞത് ഒരു കാരു പരിശോധിച്ച വസ്തു",
+      "check_reviews": "{n} അവലോകനങ്ങളും ശരാശരി {avg} അല്ലെങ്കിൽ കൂടുതലും (നിങ്ങൾക്ക് {have})",
+      "aadhaar": "ആധാർ",
+      "aadhaar_body": "ഡിജിലോക്കർ വഴി പരിശോധിക്കുക. ഏകദേശം രണ്ട് മിനിറ്റ് എടുക്കും.",
+      "aadhaar_start": "ഡിജിലോക്കർ വഴി പരിശോധിക്കുക",
+      "aadhaar_verified": "പരിശോധിച്ചു (അവസാന അക്കങ്ങൾ {last4})",
+      "aadhaar_privacy": "കാരു അവസാന 4 അക്കങ്ങൾ മാത്രം സൂക്ഷിക്കും.",
+      "pehchan": "പെഹ്ചാൻ കരകൗശല കാർഡ്",
+      "pehchan_ph": "കാർഡ് നമ്പർ",
+      "check": "പരിശോധിക്കുക",
+      "pehchan_sent": "നിങ്ങളുടെ കാർഡ് പരിശോധിക്കുന്നു.",
+      "pehchan_pending": "രജിസ്റ്ററുമായി പരിശോധിക്കുന്നു…",
+      "pehchan_verified": "പെഹ്ചാൻ കാർഡ് പരിശോധിച്ചു",
+      "pehchan_failed": "ഈ കാർഡ് പൊരുത്തപ്പെടുന്നില്ല. നമ്പർ പരിശോധിക്കുക.",
+      "public_profile": "വാങ്ങുന്നവർ കാണുന്നത്",
+      "change_photo": "ഫോട്ടോ മാറ്റുക",
+      "uploading": "അപ്‌ലോഡ് ചെയ്യുന്നു…",
+      "story": "നിങ്ങളുടെ കഥ",
+      "story_hint": "നിങ്ങളെയും നിങ്ങളുടെ കലയെയും കുറിച്ച് കുറച്ച് വരികൾ.",
+      "voice_clip": "നിങ്ങളുടെ ശബ്ദം",
+      "record_voice": "നിങ്ങളുടെ ശബ്ദം റെക്കോർഡ് ചെയ്യുക",
+      "rerecord_voice": "വീണ്ടും റെക്കോർഡ് ചെയ്യുക",
+      "stop_recording": "നിർത്തി സേവ് ചെയ്യുക",
+      "show_voice": "എന്റെ ശബ്ദം വാങ്ങുന്നവരെ കേൾപ്പിക്കുക",
+      "show_voice_hint": "എപ്പോൾ വേണമെങ്കിലും മറയ്ക്കാം.",
+      "years": "പരിചയ വർഷങ്ങൾ",
+      "links": "നിങ്ങളുടെ കടയുടെയോ Instagram ന്റെയോ ലിങ്കുകൾ",
+      "links_hint": "ഓരോ വരിയിലും ഒന്ന്.",
+      "handle": "നിങ്ങളുടെ പേജ് വിലാസം",
+      "handle_hint": "ഒരു തവണ മാറ്റാം.",
+      "handle_locked": "ഇതിനകം മാറ്റി.",
+      "save": "സേവ് ചെയ്യുക",
+      "saved": "സേവ് ചെയ്തു",
+      "error": "സേവ് ചെയ്യാനായില്ല.",
+      "handle_taken": "ഈ വിലാസം ഇതിനകം എടുത്തതാണ്.",
+      "handle_already_edited": "നിങ്ങൾ വിലാസം ഒരു തവണ മാറ്റിക്കഴിഞ്ഞു.",
+      "payouts": "പേയ്‌മെന്റുകൾ",
+      "settings": "ക്രമീകരണങ്ങൾ",
+      "help": "സഹായം"
+    },
+    "requests": {
+      "title": "അഭ്യർത്ഥനകൾ",
+      "make_again": "വീണ്ടും നിർമ്മിക്കുക",
+      "bulk": "ബൾക്ക് ഓർഡറുകൾ",
+      "none": "ഇതുവരെ അഭ്യർത്ഥനകൾ ഇല്ല",
+      "none_body": "തീർന്ന വസ്തു വാങ്ങുന്നയാൾക്ക് കൂടുതൽ വേണമെങ്കിൽ ഇവിടെ കാണാം.",
+      "wants": "{name} ന് {n} എണ്ണം കൂടി വേണം",
+      "a_buyer": "ഒരു വാങ്ങുന്നയാൾ",
+      "by_date": "{date} നകം",
+      "reply": "വിലയും സമയവും ചേർത്ത് മറുപടി നൽകുക",
+      "decline": "നിർമ്മിക്കാനാകില്ല",
+      "status": {
+        "open": "നിങ്ങളുടെ മറുപടിക്കായി കാത്തിരിക്കുന്നു",
+        "replied": "നിങ്ങൾ മറുപടി നൽകി",
+        "accepted": "സ്വീകരിച്ചു",
+        "declined": "നിരസിച്ചു",
+        "expired": "കാലാവധി കഴിഞ്ഞു"
+      },
+      "price_each": "ഒന്നിന്റെ വില (₹)",
+      "ready_in": "എത്ര ദിവസത്തിൽ തയ്യാർ?",
+      "message": "സന്ദേശം (ഐച്ഛികം)",
+      "send": "അയയ്ക്കുക",
+      "sent": "വാങ്ങുന്നയാൾക്ക് അയച്ചു",
+      "bulk_verified_only": "ബൾക്ക് ഓർഡറുകൾ പരിശോധിച്ച പാസ്‌പോർട്ടുള്ളവർക്ക് മാത്രം.",
+      "no_bulk": "ഇപ്പോൾ ബൾക്ക് ഓർഡറുകൾ ഇല്ല",
+      "bulk_line": "{deadline} നകം {n} വസ്തുക്കൾ",
+      "target": "ലക്ഷ്യ വില ഒന്നിന് {price}",
+      "i_can_make": "എനിക്ക് കുറച്ച് നിർമ്മിക്കാം",
+      "how_many": "തീയതിക്കകം എത്രയെണ്ണം നിർമ്മിക്കാം?",
+      "can_meet": "തീയതിക്കകം പൂർത്തിയാക്കാം",
+      "join": "അയയ്ക്കുക",
+      "joined": "നിങ്ങൾ {n} വസ്തുക്കൾ വാഗ്ദാനം ചെയ്തു. കാരു നിങ്ങളെ വിളിക്കും."
+    },
+    "settings": {
+      "title": "ക്രമീകരണങ്ങൾ",
+      "language": "ഭാഷ",
+      "voice_prompts": "സ്ക്രീൻ വായിച്ചു കേൾപ്പിക്കുക",
+      "voice_prompts_hint": "ഓരോ സ്ക്രീനിലും പ്രധാന നിർദ്ദേശം കാരു പറയും.",
+      "show_voice": "എന്റെ ശബ്ദം വാങ്ങുന്നവരെ കേൾപ്പിക്കുക",
+      "show_voice_hint": "എപ്പോൾ വേണമെങ്കിലും മറയ്ക്കാം.",
+      "notifications": "കാരു സന്ദേശങ്ങൾ",
+      "channel": {
+        "whatsapp": "WhatsApp",
+        "sms": "SMS",
+        "in_app": "ആപ്പിൽ"
+      },
+      "export": "എന്റെ ഡാറ്റ ഡൗൺലോഡ് ചെയ്യുക",
+      "logout": "ലോഗ് ഔട്ട്",
+      "delete": "എന്റെ അക്കൗണ്ട് നീക്കുക",
+      "delete_confirm": "നിങ്ങളുടെ വസ്തുക്കൾ നീക്കും; വ്യക്തിഗത ഡാറ്റ 30 ദിവസത്തിന് ശേഷം മായ്ക്കും.",
+      "delete_yes": "അതെ, അക്കൗണ്ട് നീക്കുക"
+    },
+    "help": {
+      "title": "സഹായം",
+      "list": {
+        "title": "വസ്തു ചേർക്കുക",
+        "body": "വലിയ പ്ലസ് അമർത്തുക. പകൽ വെളിച്ചത്തിൽ ഫോട്ടോ എടുക്കുക, എന്നിട്ട് ഇത് എന്താണെന്നും വില എത്രയെന്നും പറയുക."
+      },
+      "verify": {
+        "title": "കാരു പരിശോധന നേടുക",
+        "body": "വസ്തു നിർമ്മിക്കുന്ന കൈകളുടെ ചെറിയ വീഡിയോ എടുക്കുക, അവസാനം പൂർത്തിയായ വസ്തു കാണിക്കുക."
+      },
+      "price": {
+        "title": "വില ഉപദേശം",
+        "body": "ഇത്തരം വസ്തുക്കൾക്ക് കടകൾ എത്ര വാങ്ങുന്നുവെന്ന് കാരു കാണിക്കും. വില നിങ്ങൾ തീരുമാനിക്കുക."
+      },
+      "ship": {
+        "title": "ഓർഡർ അയയ്ക്കുക",
+        "body": "വസ്തു കാരു ഐഡി ടാഗിനൊപ്പം പാക്ക് ചെയ്ത്, ഓർഡറിൽ അയച്ചു എന്ന് അമർത്തുക."
+      },
+      "payout": {
+        "title": "പണം നേടുക",
+        "body": "പേയ്‌മെന്റുകളിൽ ബാങ്ക് അക്കൗണ്ട് ചേർക്കുക."
+      },
+      "share": {
+        "title": "WhatsApp ൽ പങ്കിടുക",
+        "body": "വസ്തു തുറന്ന്, പങ്കിടുക അമർത്തി അയയ്ക്കുക."
+      },
+      "call": "കാരു സഹായത്തെ വിളിക്കുക",
+      "contact_soon": "പൈലറ്റ് കാലയളവിൽ ഹെൽപ്പ്‌ലൈൻ നമ്പർ ഇവിടെ കാണും."
+    },
+    "notifications": {
+      "title": "അറിയിപ്പുകൾ",
+      "none": "പുതിയതായി ഒന്നുമില്ല"
+    },
+    "products": {
+      "title": "Workshop Products",
+      "subtitle": "Manage your handcrafted pieces, verification, and active inventory.",
+      "filter_all": "All Pieces",
+      "filter_published": "Live & Listed",
+      "filter_not_verified": "Verification Pending",
+      "filter_drafts": "Drafts",
+      "filter_paused": "Paused",
+      "empty_title": "No products found",
+      "empty_body": "Photograph a finished piece on your workbench to list it across India.",
+      "add_first": "List your first piece",
+      "manage": "Manage Piece"
+    }
+  },
+  "footer": {
+    "tagline": "Indian handmade, proven. Every maker has a Karu Passport; every piece has a Karu ID you can scan.",
+    "shop": "Shop",
+    "all_categories": "All categories",
+    "verified_only": "Karu Verified pieces",
+    "impact": "Our impact",
+    "karu": "Karu",
+    "about": "About Karu",
+    "verification": "How verification works",
+    "sell_on_karu": "Sell on Karu — free",
+    "business": "For businesses & organisations",
+    "help": "Help",
+    "help_centre": "Help centre",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "promise": "We do not generate the product. We help the real product speak for itself."
+  },
+  "browse": {
+    "verified_only": "Karu Verified only",
+    "verified_only_hint": "Proven handmade with a making video",
+    "category": "Category",
+    "any": "Any",
+    "craft": "Craft",
+    "price": "Price (₹)",
+    "min": "Min",
+    "max": "Max",
+    "min_price": "Minimum price",
+    "max_price": "Maximum price",
+    "region": "Region",
+    "material": "Material",
+    "returnable": "Returnable",
+    "in_stock": "In stock",
+    "rating_4": "Rated 4★ and above",
+    "loading": "Loading…",
+    "results": "{n, plural, one {# piece} other {# pieces}}",
+    "filters": "Filters",
+    "sort": "Sort",
+    "sort_relevance": "Most relevant",
+    "sort_new": "Newest",
+    "sort_price_asc": "Price: low to high",
+    "sort_price_desc": "Price: high to low",
+    "sort_rating": "Top rated",
+    "error": "We couldn't load pieces right now.",
+    "retry": "Try again",
+    "empty": "No pieces match yet",
+    "empty_body": "Try fewer filters, or another spelling — we understand Hindi and Hinglish too.",
+    "load_more": "Show more",
+    "show_results": "Show {n, plural, one {# piece} other {# pieces}}",
+    "category_sub": "Handmade by makers across India. Karu Verified pieces come first.",
+    "search_title": "Results for “{q}”",
+    "search_all": "Search handmade",
+    "all_categories": "All categories",
+    "crafts_clusters": "Crafts & clusters",
+    "gi_tag": "GI-tagged",
+    "empty_title": "No handmade pieces found",
+    "empty_desc": "Try removing some filters or search for another craft."
+  },
+  "craft": {
+    "gi_title": "A Geographical Indication (GI) craft",
+    "gi_body": "This craft is protected by a GI tag for its region. On Karu, the maker's registry status is checked separately and shown on each piece.",
+    "makers": "Makers of this craft",
+    "pieces": "Pieces",
+    "none_yet": "No pieces from this craft yet."
+  },
+  "product": {
+    "home": "Home",
+    "gi_craft": "GI craft: {craft}",
+    "by": "Made by",
+    "price_note": "Includes taxes. The maker receives 100% of the price — Karu takes no commission.",
+    "maker_under_review": "This maker's account is under review, so this piece can't be bought right now.",
+    "proof_title": "The proof",
+    "revoked": "Karu withdrew this piece's verification on {date}.",
+    "not_verified_body": "This piece is not verified yet. The maker hasn't added a making video, or the checks are still building. You can still buy it — returns follow the maker's policy below.",
+    "what_verified_means": "What “Karu Verified” means",
+    "story": "In the maker's words",
+    "translated_from": "Translated from {lang}",
+    "show_original": "Show original",
+    "show_translation": "Show translation",
+    "details": "Details",
+    "attr": {
+      "material": "Material",
+      "technique": "Technique",
+      "dye": "Dye",
+      "colour": "Colours",
+      "dimensions": "Size",
+      "time_to_make_days": "Time to make",
+      "weight_g": "Weight",
+      "finish": "Finish",
+      "care": "Care"
+    },
+    "days": "{n, plural, one {# day} other {# days}}",
+    "returnable": "Returnable within {days} days of delivery",
+    "not_returnable": "This piece is not returnable (the maker's choice)",
+    "delivery": "Shipped by the maker with its Karu ID tag. Delivery estimate shown at checkout.",
+    "similar": "You may also like",
+    "making_video": "Making",
+    "added_to_cart": "Added to your cart",
+    "just_sold_out": "Sorry — this piece just sold out.",
+    "error": "Something went wrong. Please try again.",
+    "link_copied": "Link copied",
+    "approx_intl": "{approx} · charged in INR",
+    "request_again": "Request this again",
+    "share": "Share",
+    "add_to_cart": "Add to cart",
+    "buy_now": "Buy now",
+    "quantity": "How many?",
+    "needed_by": "Needed by (optional)",
+    "note": "Note for the maker (optional)",
+    "send_request": "Send request",
+    "request_sent": "Request sent to the maker",
+    "request_again_body": "The maker will reply with a price and time, or let you know if they can't."
+  },
+  "reviews": {
+    "title": "Reviews",
+    "count": "{n, plural, one {# review} other {# reviews}}",
+    "none": "No reviews yet. Only buyers of this piece can review it.",
+    "verified_purchase": "Verified purchase"
+  },
+  "report": {
+    "link": "Report a problem",
+    "title": "Report a problem",
+    "reason": "What's wrong?",
+    "reasons": {
+      "suspected_fake": "I think this is not genuine handmade",
+      "wrong_info": "Wrong information",
+      "copyright": "My photo or design was copied",
+      "prohibited": "Prohibited item",
+      "child_labour": "A child appears to be working",
+      "other": "Something else"
+    },
+    "details": "Details (optional)",
+    "send": "Send report",
+    "thanks": "Thank you. Our team will look into it.",
+    "error": "We couldn't send the report. Please try again."
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "empty_body": "Every piece on Karu is made by hand by a real person.",
+    "browse": "Browse handmade",
+    "from_maker": "From",
+    "unavailable": "No longer available",
+    "less": "One less",
+    "more": "One more",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "zero_commission": "Makers receive 100% of the price — Karu takes 0% commission.",
+    "checkout": "Checkout",
+    "continue": "Continue shopping"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "deliver_to": "Deliver to",
+    "add_address": "Add a new address",
+    "need_address": "Please add a delivery address.",
+    "payment": "Payment",
+    "upi_first": "UPI (recommended) — any UPI app",
+    "cards": "Debit and credit cards",
+    "intl": "International cards (charged in INR)",
+    "netbanking": "Netbanking and wallets",
+    "secure": "Secure payment through Razorpay. Karu never sees your card details.",
+    "summary": "Order summary",
+    "paid_to": "Paid to {maker}",
+    "total": "Total",
+    "maker_gets_100": "The makers receive the full item price after delivery.",
+    "pay": "Pay {amount}",
+    "reserved_note": "Your pieces are held for you for 15 minutes while you pay.",
+    "upi_block": "Pay with UPI",
+    "payment_dismissed": "Payment not completed. Your pieces stay held for a few minutes.",
+    "payment_failed": "The payment didn't go through. You can try again.",
+    "just_sold_out": "Sorry — a piece in your cart just sold out. Please review your cart.",
+    "error": "We couldn't place the order. Please try again.",
+    "test_title": "Test payment",
+    "test_notice": "Test mode: no real money moves. Razorpay keys are not configured on this server.",
+    "m_upi": "UPI",
+    "m_card": "Debit / credit card",
+    "m_intl": "International card",
+    "m_netbanking": "Netbanking",
+    "m_wallet": "Wallet",
+    "recommended": "Recommended",
+    "pay_test": "Pay {amount} (test)",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free"
+  },
+  "address": {
+    "name": "Full name",
+    "phone": "Phone",
+    "line1": "House, street",
+    "line2": "Area, landmark (optional)",
+    "city": "City",
+    "pin": "PIN code",
+    "state": "State",
+    "default": "Use as my default address",
+    "save": "Save address",
+    "errors": {
+      "invalid_pin": "Please enter a valid 6-digit PIN code.",
+      "invalid_phone": "Please enter a valid phone number.",
+      "generic": "We couldn't save the address. Please check and try again."
+    }
+  },
+  "success": {
+    "confirming": "Confirming your payment…",
+    "title": "Thank you! Your order is confirmed.",
+    "order_number": "Order {n}",
+    "by": "Made by {maker}",
+    "karu_id": "You'll receive Karu ID {id} with your piece. Scan its tag to meet the maker.",
+    "refunded_item": "This piece sold out just before your payment — a full refund has been started.",
+    "see_proof": "See the proof",
+    "story_card": "Save story card",
+    "story_card_line": "Handmade by {maker} · Karu",
+    "track": "Track order",
+    "continue": "Continue shopping"
+  },
+  "account": {
+    "title": "Your account",
+    "your_name": "Your name",
+    "save": "Save",
+    "saved": "Saved",
+    "orders": "Orders & returns",
+    "wishlist": "Wishlist",
+    "following": "Makers you follow",
+    "requests": "Your “make this again” requests",
+    "addresses": "Addresses",
+    "reviews": "Reviews you wrote",
+    "settings": "Settings & privacy",
+    "notifications": "Notifications",
+    "artisan_dashboard": "Your maker dashboard",
+    "start_selling": "Start selling on Karu — free",
+    "staff_console": "Staff console",
+    "logout": "Log out",
+    "browse": "Browse handmade",
+    "wishlist_empty": "Nothing saved yet",
+    "following_empty": "You don't follow any makers yet",
+    "add": "Add address",
+    "no_addresses": "No addresses yet",
+    "default": "Default",
+    "edit": "Edit",
+    "delete": "Delete",
+    "no_reviews": "You haven't written any reviews yet",
+    "no_requests": "No requests yet",
+    "no_requests_body": "When a piece is out of stock, tap “Request this again” and the maker will reply.",
+    "req_qty": "{n, plural, one {# piece} other {# pieces}}",
+    "req_status": {
+      "open": "Waiting for the maker",
+      "replied": "The maker replied",
+      "accepted": "Accepted",
+      "declined": "The maker can't make this now",
+      "expired": "Expired"
+    },
+    "ready_in": "{n, plural, one {ready in # day} other {ready in # days}}"
+  },
+  "orders": {
+    "title": "Your orders",
+    "empty": "No orders yet",
+    "browse": "Browse handmade",
+    "order": "Order {n}",
+    "deliver_to": "Delivering to",
+    "status": {
+      "pending": "Awaiting payment",
+      "to_pack": "Being packed",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "return_requested": "Return requested",
+      "returned": "Returned",
+      "cancelled": "Cancelled",
+      "paid": "Paid",
+      "pending_payment": "Awaiting payment",
+      "partially_shipped": "Partly shipped",
+      "completed": "Completed",
+      "refunded": "Refunded"
+    },
+    "method": {
+      "upi": "Paid by UPI",
+      "card": "Paid by card",
+      "intl_card": "Paid by international card",
+      "netbanking": "Paid by netbanking",
+      "wallet": "Paid by wallet"
+    },
+    "timeline": {
+      "paid": "Paid",
+      "packing": "Maker is packing it",
+      "shipped": "Shipped",
+      "delivered": "Delivered"
+    },
+    "refund": "Refund {status} · {amount}",
+    "refund_status": {
+      "pending": "started",
+      "processed": "completed",
+      "failed": "pending with our team"
+    },
+    "received": "I received it",
+    "thanks_received": "Thank you! Enjoy your piece.",
+    "not_received": "Not received?",
+    "dispute_sent": "Thanks — our team will check with the courier and the maker.",
+    "write_review": "Write a review",
+    "return": "Return",
+    "not_returnable": "Not returnable (maker's choice)",
+    "return_until": "Return until {date}",
+    "return_reason": "Why are you returning it?",
+    "reasons": {
+      "not_as_described": "Not as described",
+      "damaged": "Arrived damaged",
+      "changed_mind": "Changed my mind",
+      "other": "Other"
+    },
+    "details": "Tell us more (optional)",
+    "photos": "Photos (optional)",
+    "return_note": "The maker will be told. Please ship it back; your refund is processed when they receive it.",
+    "request_return": "Request return",
+    "review_thanks": "Thank you for your review",
+    "rating": "Your rating",
+    "review_placeholder": "What did you like about the piece and the maker?",
+    "submit_review": "Post review"
+  },
+  "settings": {
+    "title": "Settings & privacy",
+    "notifications": "How should we reach you?",
+    "channel": {
+      "whatsapp": "WhatsApp",
+      "sms": "SMS",
+      "email": "Email",
+      "in_app": "In the app",
+      "followed_makers": "New pieces from makers I follow"
+    },
+    "language": "Language",
+    "your_data": "Your data",
+    "your_data_body": "Download everything Karu holds about you, or delete your account. Deleted accounts are erased after 30 days.",
+    "export": "Download my data",
+    "delete": "Delete my account",
+    "delete_confirm": "Your account will be closed now and your personal data erased after 30 days. Pieces you bought keep their Karu IDs.",
+    "delete_yes": "Yes, delete my account",
+    "deleted": "Your account has been deleted"
+  },
+  "business": {
+    "title": "Source handmade, in bulk",
+    "intro": "SHGs, co-operatives, NGOs, exporters and brands: tell us what you need. Karu brings the request to verified makers in that craft.",
+    "step1": "Tell us the product, quantity, target price and deadline.",
+    "step2": "Karu staff review it and publish an opportunity.",
+    "step3": "Verified makers in the category say how many they can make by your date.",
+    "step4": "Our team confirms the makers and coordinates the deal with you.",
+    "org": "Organisation",
+    "contact": "Your name",
+    "phone": "Phone",
+    "email": "Email",
+    "category": "Category",
+    "any_category": "Any / not sure",
+    "product_type": "Product",
+    "product_type_ph": "e.g. 200 handloom cotton stoles",
+    "description": "Details (sizes, colours, packaging)",
+    "quantity": "Quantity",
+    "target_price": "Target price per piece (₹)",
+    "deadline": "Needed by",
+    "submit": "Send request",
+    "privacy": "Your contact details are only seen by Karu staff.",
+    "thanks": "Thank you!",
+    "thanks_body": "Our team will review your request and get back to you within two working days.",
+    "rate_limited": "You've sent several requests already. Please try again later.",
+    "error": "We couldn't send the request. Please try again."
+  },
+  "impact": {
+    "title": "Our impact",
+    "intro": "Karu is free for makers: 0% commission. These numbers update every few minutes.",
+    "artisans": "makers on Karu",
+    "pieces_verified": "pieces Karu Verified",
+    "paid": "paid to makers",
+    "clusters": "craft clusters",
+    "states": "states",
+    "zero_commission": "Every rupee of the item price goes to the maker. Karu covers payment and verification costs during the pilot."
+  },
+  "pages": {
+    "about": {
+      "title": "About Karu",
+      "lead": "Karu is an Indian handmade-goods marketplace where every maker has a Karu Passport and every piece has a Karu ID that proves it is genuinely handmade.",
+      "sections": [
+        {
+          "h": "The maker disappears",
+          "p": "Most listings say “Handmade – ₹1,800” with no proof of who made it, where, or whether the piece in the photo is the piece you receive. Power-loom copies are sold as handloom, and the people who keep crafts alive are invisible."
+        },
+        {
+          "h": "One photo and one voice note",
+          "p": "Makers shouldn't need to be photographers or copywriters. On Karu, a maker takes one photo and speaks for a minute in their own language. Karu writes the listing in their language, English and Hindi, cleans up the photo without inventing anything, and shows a fair price range from the live market."
+        },
+        {
+          "h": "Proof, not percentages",
+          "p": "Every piece goes through three checks: the photos, the maker's record, and a video of it being made. A piece is either Karu Verified or not verified yet. Buyers can scan the QR on the tag to see the proof."
+        },
+        {
+          "h": "Free for makers",
+          "p": "Makers pay nothing and keep 100% of the price. Payments are held safely until delivery and the return window close, then paid to the maker's bank or UPI."
+        },
+        {
+          "h": "Our promise",
+          "p": "We do not generate the product. We help the real product speak for itself."
+        }
+      ]
+    },
+    "verification_explained": {
+      "title": "How Karu verification works",
+      "lead": "Karu Verified means three independent checks agree that this piece was made by hand by this maker.",
+      "sections": [
+        {
+          "h": "1. The photos",
+          "p": "We look for the marks of hand work — uneven slubs in a weave, brush strokes, wheel marks, tool marks — and search the web to make sure the photos belong to this maker and haven't appeared elsewhere first."
+        },
+        {
+          "h": "2. The maker's record",
+          "p": "Verified identity (Aadhaar through DigiLocker, Pehchan artisan card, GI registration), past verified pieces, reviews and returns. New makers start with a neutral record — they can be verified on strong photos and a making video alone."
+        },
+        {
+          "h": "3. The making video",
+          "p": "The maker films this piece or batch being made: hands at work, the loom, wheel or tools, ending with the finished piece. We check the process, that it is the same piece as in the photos, and that the video isn't reused."
+        },
+        {
+          "h": "No video, no badge",
+          "p": "Without a making video a piece cannot be Karu Verified. It can still be sold, and buyers see “Not verified yet”."
+        },
+        {
+          "h": "Why no percentages?",
+          "p": "A number like “87% authentic” sounds precise but isn't. We show a clear verdict and the three checks in plain words. If later evidence shows a problem, the badge is withdrawn and anyone scanning a sold piece sees that."
+        },
+        {
+          "h": "Every piece has its own Karu ID",
+          "p": "Each physical piece gets a Karu ID (like KRU-8F29A1QZ) and a QR tag. Scanning it shows the piece's journey — made, listed, sold. If a sold piece's QR is copied onto a fake, the page shows the original photo and that it was already sold."
+        }
+      ]
+    },
+    "help": {
+      "title": "Help",
+      "lead": "Answers to common questions from buyers and makers.",
+      "sections": [
+        {
+          "h": "Where is my order?",
+          "p": "Open Account → Orders. You'll see when the maker packed and shipped your piece, with courier and tracking if they added them. Tap “I received it” when it arrives."
+        },
+        {
+          "h": "Returns",
+          "p": "If the maker accepts returns, you can request one within 7 days of delivery from your order page. Refunds go back to your original payment method once the maker receives the piece."
+        },
+        {
+          "h": "Scanning a Karu ID",
+          "p": "Point your phone camera at the QR on the tag. The Karu ID page opens in your browser — no app needed."
+        },
+        {
+          "h": "Selling on Karu",
+          "p": "Tap “Sell on Karu”, choose your language and log in with your phone. Add your first piece with one photo and a voice note. It's free, and you keep 100% of the price."
+        },
+        {
+          "h": "Contact us",
+          "p": "Use “Report a problem” on any piece, or write to help@karu.ai."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of use (summary)",
+      "lead": "This plain-language summary will be replaced by the full terms after legal review.",
+      "sections": [
+        {
+          "h": "Karu Passport and Karu IDs",
+          "p": "Karu grants each maker one Karu Passport and creates a Karu ID for every unit listed. Passports and IDs belong to Karu, which may suspend or revoke them for fraud or repeated misrepresentation."
+        },
+        {
+          "h": "Listings",
+          "p": "Makers must list only work they made themselves and must not use other people's photos or videos. Karu may edit photos only to clean them up (crop, background, light); it never creates product images."
+        },
+        {
+          "h": "Payments",
+          "p": "Buyers pay Karu through Razorpay. Karu passes 100% of the item price to the maker after delivery and, where returns are accepted, after the 7-day return window."
+        },
+        {
+          "h": "Prohibited items",
+          "p": "Wildlife products, ivory, and other items banned by Indian law may not be listed. Karu removes such listings."
+        },
+        {
+          "h": "Children",
+          "p": "Photos or videos showing children working are not allowed and will be removed."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy (summary)",
+      "lead": "Karu follows India's Digital Personal Data Protection Act, 2023. This summary will be replaced by the full policy after legal review.",
+      "sections": [
+        {
+          "h": "What we collect",
+          "p": "Phone or email, your name, and — for makers — your craft, place, photos, voice notes and making videos. Addresses are used only to deliver orders."
+        },
+        {
+          "h": "What is public",
+          "p": "For makers: your public name, photo, craft, village or town and district, story, and (if you allow) your voice clip and making videos. Your exact address and phone number are never shown."
+        },
+        {
+          "h": "Aadhaar",
+          "p": "Aadhaar is verified through DigiLocker by a licensed provider. Karu stores only that it was verified and the last 4 digits — never the full number or document."
+        },
+        {
+          "h": "Your choices",
+          "p": "You can hide your voice clip, change notification settings, download your data, or delete your account at any time from Settings. Personal data is erased 30 days after deletion."
+        },
+        {
+          "h": "Where data lives",
+          "p": "Data is stored in India and encrypted. We don't sell personal data."
+        }
+      ]
+    }
+  }
+}

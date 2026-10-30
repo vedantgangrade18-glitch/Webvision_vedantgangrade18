@@ -1,0 +1,18 @@
+[project]
+name = "karu-api"
+version = "1.0.0"
+description = "Karu API: handmade marketplace with Karu Passport, Karu ID and three-layer verification"
+requires-python = ">=3.11"
+# Exact pins live in requirements.txt (version policy, Part 2 §2).
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+extend-exclude = ["migrations/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "ASYNC"]
+ignore = ["B008", "B904", "B905", "E501", "UP007", "UP035", "ASYNC109", "ASYNC110", "ASYNC230", "ASYNC240", "ASYNC250", "ASYNC251"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app", "tests"]

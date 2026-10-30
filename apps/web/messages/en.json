@@ -1,0 +1,1364 @@
+{
+  "common": {
+    "language": "Language",
+    "close": "Close",
+    "or": "or",
+    "back": "Back",
+    "time": {
+      "minutes": "{n, plural, one {# minute ago} other {# minutes ago}}",
+      "hours": "{n, plural, one {# hour ago} other {# hours ago}}",
+      "days": "{n, plural, one {# day ago} other {# days ago}}"
+    }
+  },
+  "badge": {
+    "verified": "Karu Verified",
+    "checking": "Checking",
+    "revoked": "Verification withdrawn",
+    "not_verified": "Not verified yet"
+  },
+  "stock": {
+    "in": "In stock",
+    "low": "Only {n} left",
+    "out": "Out of stock"
+  },
+  "proof": {
+    "check": {
+      "handmade_look": {
+        "passed": "Handmade look confirmed",
+        "not_passed": "Handmade look not confirmed yet",
+        "pending": "Checking the photos",
+        "new_maker": "Handmade look confirmed",
+        "missing": "Photos not checked"
+      },
+      "maker_record": {
+        "passed": "Maker's record checked",
+        "not_passed": "Maker's record still building",
+        "pending": "Checking the maker's record",
+        "new_maker": "New maker on Karu — identity and history being built",
+        "missing": "Maker's record not checked"
+      },
+      "making_video": {
+        "passed": "Making video checked",
+        "not_passed": "Making video not confirmed",
+        "pending": "Checking the making video",
+        "new_maker": "Making video checked",
+        "missing": "No making video yet"
+      }
+    },
+    "photos_original": "Photos not found anywhere else online",
+    "registry": {
+      "pehchan": "Pehchan artisan card verified on {date}",
+      "gi": "GI authorised user, checked on {date}"
+    },
+    "how_we_checked": "How we checked",
+    "how": {
+      "l1": "Photos: we looked for signs of hand work (weave irregularities, tool and brush marks) and searched the web to make sure the photos are the maker's own.",
+      "l2": "Maker: we checked the maker's identity and history on Karu — verified ID, registry cards, past verified pieces and reviews.",
+      "l3": "Making video: the maker filmed this piece or batch being made; we checked the process, that it is the same piece, and that the video is original.",
+      "no_scores": "We don't show percentages: a piece is either Karu Verified or not verified yet."
+    }
+  },
+  "price": {
+    "handmade_range": "Handmade {low}–{high}",
+    "replica_range": "Unverified / mass-market {low}–{high}",
+    "sources": "See {n, plural, one {# example} other {# examples}} from the web",
+    "demo_sources": "Demo data from the offline test provider (no live market search configured)."
+  },
+  "card": {
+    "wish": "Save to wishlist",
+    "unwish": "Remove from wishlist"
+  },
+  "maker": {
+    "listen": "Listen to {name}",
+    "follow": "Follow",
+    "following": "Following",
+    "passport_verified": "Verified Karu Passport",
+    "passport_unverified": "Karu Passport",
+    "years": "{n, plural, one {# year of craft} other {# years of craft}}",
+    "under_review": "This maker's account is under review.",
+    "story_translated": "Story shown in your language where available.",
+    "member_since": "On Karu since {date}",
+    "pieces": "{n, plural, one {# piece} other {# pieces}}",
+    "reviews": "What buyers say",
+    "meet": "Meet the Maker"
+  },
+  "passport": {
+    "title": "Karu Passport",
+    "member_since": "Member since {date}",
+    "state": {
+      "verified": "Verified",
+      "unverified": "Not verified yet",
+      "suspended": "Under review"
+    },
+    "id": "Passport ID",
+    "since": "Member since",
+    "verified_pieces": "Verified pieces",
+    "rating": "Rating",
+    "save_image": "Save passport image"
+  },
+  "voice": {
+    "speak": "Speak instead of typing",
+    "stop": "Stop",
+    "not_caught": "We couldn't hear that clearly. Please try again.",
+    "unsupported": "Voice input isn't available on this phone. Please type.",
+    "permission_denied": "Please allow the microphone to speak.",
+    "read_aloud": "Read aloud"
+  },
+  "nav": {
+    "main": "Main",
+    "home": "Home",
+    "categories": "Categories",
+    "crafts": "Crafts",
+    "how_verification_works": "How verification works",
+    "search": "Search",
+    "search_placeholder": "Search sarees, Madhubani, brass…",
+    "sell": "Sell on Karu",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "account": "Account",
+    "login": "Log in",
+    "suggest_product": "Piece",
+    "suggest_craft": "Craft",
+    "suggest_category": "Category",
+    "shop": "Shop",
+    "regions": "Regions",
+    "makers": "Makers",
+    "track_order": "Track order",
+    "view_all": "View all",
+    "announce": {
+      "1": "Every piece carries a Karu ID",
+      "2": "Free shipping across India",
+      "3": "Paid directly to the maker"
+    }
+  },
+  "footer": {
+    "tagline": "Indian handmade, proven. Every maker has a Karu Passport; every piece has a Karu ID you can scan.",
+    "shop": "Shop",
+    "all_categories": "All categories",
+    "verified_only": "Karu Verified pieces",
+    "impact": "Our impact",
+    "karu": "Karu",
+    "about": "About Karu",
+    "verification": "How verification works",
+    "sell_on_karu": "Sell on Karu — free",
+    "business": "For businesses & organisations",
+    "help": "Help",
+    "help_centre": "Help centre",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "promise": "We do not generate the product. We help the real product speak for itself."
+  },
+  "home": {
+    "eyebrow": "Handmade, proven",
+    "title": "Meet the hands behind every piece.",
+    "subtitle": "Genuine Indian handmade goods, each with a Karu ID that shows who made it, where, and how we checked.",
+    "cta_verified": "Shop Karu Verified",
+    "cta_sell": "I am a maker",
+    "made_by": "By {name} · {place}",
+    "how": {
+      "passport": {
+        "title": "A passport for every maker",
+        "body": "Real people, real places. Every artisan on Karu has one Karu Passport."
+      },
+      "karu_id": {
+        "title": "A Karu ID for every piece",
+        "body": "Each physical piece gets its own ID, checked by photos, records and a making video."
+      },
+      "scan": {
+        "title": "Scan to see the proof",
+        "body": "The QR on the tag opens the piece's story and proof — no app needed."
+      }
+    },
+    "categories": "Shop by category",
+    "see_all": "See all",
+    "verified_picks": "Karu Verified picks",
+    "verified_picks_sub": "Proven handmade, with the making video to show it",
+    "gi_tag": "GI-tagged craft",
+    "explore_craft": "Explore the craft",
+    "meet_makers": "Meet the makers",
+    "meet_makers_sub": "The people and places behind the pieces",
+    "recently_viewed": "Recently viewed",
+    "new_collection": "New collection",
+    "rooted_heritage": "Rooted in heritage",
+    "rooted_sub": "Centuries of generational mastery preserved without synthetic shortcut.",
+    "shop_region": "Shop by region",
+    "shop_region_sub": "Direct from India's most celebrated heritage craft clusters.",
+    "explore_cluster": "Explore cluster",
+    "patron_voices": "Words from our patrons",
+    "patron_sub": "Cherished by patrons who value living craft and proven origins.",
+    "verified_purchase": "Verified purchase",
+    "karu_edit": "The Karu Edit",
+    "explore_edit": "Explore edit",
+    "impact": {
+      "artisans": "makers on Karu",
+      "pieces_verified": "pieces Karu Verified",
+      "paid": "paid to makers, 0% commission",
+      "clusters": "craft clusters",
+      "more": "See our impact"
+    }
+  },
+  "browse": {
+    "verified_only": "Karu Verified only",
+    "verified_only_hint": "Proven handmade with a making video",
+    "category": "Category",
+    "any": "Any",
+    "craft": "Craft",
+    "price": "Price (₹)",
+    "min": "Min",
+    "max": "Max",
+    "min_price": "Minimum price",
+    "max_price": "Maximum price",
+    "region": "Region",
+    "material": "Material",
+    "returnable": "Returnable",
+    "in_stock": "In stock",
+    "rating_4": "Rated 4★ and above",
+    "loading": "Loading…",
+    "results": "{n, plural, one {# piece} other {# pieces}}",
+    "filters": "Filters",
+    "sort": "Sort",
+    "sort_relevance": "Most relevant",
+    "sort_new": "Newest",
+    "sort_price_asc": "Price: low to high",
+    "sort_price_desc": "Price: high to low",
+    "sort_rating": "Top rated",
+    "error": "We couldn't load pieces right now.",
+    "retry": "Try again",
+    "empty": "No pieces match yet",
+    "empty_body": "Try fewer filters, or another spelling — we understand Hindi and Hinglish too.",
+    "load_more": "Show more",
+    "show_results": "Show {n, plural, one {# piece} other {# pieces}}",
+    "category_sub": "Handmade by makers across India. Karu Verified pieces come first.",
+    "search_title": "Results for “{q}”",
+    "search_all": "Search handmade",
+    "all_categories": "All categories",
+    "crafts_clusters": "Crafts & clusters",
+    "gi_tag": "GI-tagged",
+    "empty_title": "No handmade pieces found",
+    "empty_desc": "Try removing some filters or search for another craft."
+  },
+  "craft": {
+    "gi_title": "A Geographical Indication (GI) craft",
+    "gi_body": "This craft is protected by a GI tag for its region. On Karu, the maker's registry status is checked separately and shown on each piece.",
+    "makers": "Makers of this craft",
+    "pieces": "Pieces",
+    "none_yet": "No pieces from this craft yet."
+  },
+  "product": {
+    "home": "Home",
+    "gi_craft": "GI craft: {craft}",
+    "by": "Made by",
+    "price_note": "Includes taxes. The maker receives 100% of the price — Karu takes no commission.",
+    "maker_under_review": "This maker's account is under review, so this piece can't be bought right now.",
+    "proof_title": "The proof",
+    "revoked": "Karu withdrew this piece's verification on {date}.",
+    "not_verified_body": "This piece is not verified yet. The maker hasn't added a making video, or the checks are still building. You can still buy it — returns follow the maker's policy below.",
+    "what_verified_means": "What “Karu Verified” means",
+    "story": "In the maker's words",
+    "translated_from": "Translated from {lang}",
+    "show_original": "Show original",
+    "show_translation": "Show translation",
+    "details": "Details",
+    "attr": {
+      "material": "Material",
+      "technique": "Technique",
+      "dye": "Dye",
+      "colour": "Colours",
+      "dimensions": "Size",
+      "time_to_make_days": "Time to make",
+      "weight_g": "Weight",
+      "finish": "Finish",
+      "care": "Care"
+    },
+    "days": "{n, plural, one {# day} other {# days}}",
+    "returnable": "Returnable within {days} days of delivery",
+    "not_returnable": "This piece is not returnable (the maker's choice)",
+    "delivery": "Shipped by the maker with its Karu ID tag. Delivery estimate shown at checkout.",
+    "similar": "You may also like",
+    "making_video": "Making",
+    "added_to_cart": "Added to your cart",
+    "just_sold_out": "Sorry — this piece just sold out.",
+    "error": "Something went wrong. Please try again.",
+    "link_copied": "Link copied",
+    "approx_intl": "{approx} · charged in INR",
+    "request_again": "Request this again",
+    "share": "Share",
+    "add_to_cart": "Add to cart",
+    "buy_now": "Buy now",
+    "quantity": "How many?",
+    "needed_by": "Needed by (optional)",
+    "note": "Note for the maker (optional)",
+    "send_request": "Send request",
+    "request_sent": "Request sent to the maker",
+    "request_again_body": "The maker will reply with a price and time, or let you know if they can't."
+  },
+  "reviews": {
+    "title": "Reviews",
+    "count": "{n, plural, one {# review} other {# reviews}}",
+    "none": "No reviews yet. Only buyers of this piece can review it.",
+    "verified_purchase": "Verified purchase"
+  },
+  "report": {
+    "link": "Report a problem",
+    "title": "Report a problem",
+    "reason": "What's wrong?",
+    "reasons": {
+      "suspected_fake": "I think this is not genuine handmade",
+      "wrong_info": "Wrong information",
+      "copyright": "My photo or design was copied",
+      "prohibited": "Prohibited item",
+      "child_labour": "A child appears to be working",
+      "other": "Something else"
+    },
+    "details": "Details (optional)",
+    "send": "Send report",
+    "thanks": "Thank you. Our team will look into it.",
+    "error": "We couldn't send the report. Please try again."
+  },
+  "kid": {
+    "verified": "Karu Verified",
+    "revoked": "Verification withdrawn",
+    "checking": "Being checked",
+    "not_verified": "Not verified yet",
+    "verified_line": "{craft} · handmade by {name} in {place}",
+    "handmade": "Handmade",
+    "sold_notice": "This piece was sold on {date}. If someone is offering you this exact piece as new, please report it.",
+    "owned_by_you": "This piece is yours — thank you for supporting the maker.",
+    "the_maker": "The maker",
+    "passport_verified": "Verified Karu Passport",
+    "passport_unverified": "Karu Passport",
+    "years": "{n, plural, one {# year of craft} other {# years of craft}}",
+    "listen": "Listen to {name}",
+    "maker_under_review": "Maker account under review.",
+    "the_proof": "The proof",
+    "watch_making": "Watch it being made",
+    "revoked_body": "Karu withdrew this piece's verification on {date} after new evidence. If you bought it as Karu Verified, contact Karu help.",
+    "journey": "This piece's journey",
+    "event": {
+      "made": "Made",
+      "listed": "Listed on Karu",
+      "sold": "Sold · {city}",
+      "delivered": "Delivered",
+      "returned": "Returned to the maker",
+      "owned": "Owned since"
+    },
+    "market": "Similar handmade pieces sell for {low}–{high}.",
+    "buy": "Buy on Karu · {price}",
+    "request_again": "Request this again",
+    "more_from": "See more from {name}",
+    "report": "Report a problem with this Karu ID",
+    "report_sent": "Thank you — our team will look into it.",
+    "report_prompt": "What's wrong with this piece or tag?",
+    "how_it_works": "How Karu verification works",
+    "not_found_title": "We couldn't find this Karu ID",
+    "not_found_body": "Check the code on the tag. A genuine Karu ID looks like KRU-8F29A1QZ. If the QR led here, the tag may not be genuine — please let us know.",
+    "go_home": "Go to Karu"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "empty_body": "Every piece on Karu is made by hand by a real person.",
+    "browse": "Browse handmade",
+    "from_maker": "From",
+    "unavailable": "No longer available",
+    "less": "One less",
+    "more": "One more",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "zero_commission": "Makers receive 100% of the price — Karu takes 0% commission.",
+    "checkout": "Checkout",
+    "continue": "Continue shopping"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "deliver_to": "Deliver to",
+    "add_address": "Add a new address",
+    "need_address": "Please add a delivery address.",
+    "payment": "Payment",
+    "upi_first": "UPI (recommended) — any UPI app",
+    "cards": "Debit and credit cards",
+    "intl": "International cards (charged in INR)",
+    "netbanking": "Netbanking and wallets",
+    "secure": "Secure payment through Razorpay. Karu never sees your card details.",
+    "summary": "Order summary",
+    "paid_to": "Paid to {maker}",
+    "total": "Total",
+    "maker_gets_100": "The makers receive the full item price after delivery.",
+    "pay": "Pay {amount}",
+    "reserved_note": "Your pieces are held for you for 15 minutes while you pay.",
+    "upi_block": "Pay with UPI",
+    "payment_dismissed": "Payment not completed. Your pieces stay held for a few minutes.",
+    "payment_failed": "The payment didn't go through. You can try again.",
+    "just_sold_out": "Sorry — a piece in your cart just sold out. Please review your cart.",
+    "error": "We couldn't place the order. Please try again.",
+    "test_title": "Test payment",
+    "test_notice": "Test mode: no real money moves. Razorpay keys are not configured on this server.",
+    "m_upi": "UPI",
+    "m_card": "Debit / credit card",
+    "m_intl": "International card",
+    "m_netbanking": "Netbanking",
+    "m_wallet": "Wallet",
+    "recommended": "Recommended",
+    "pay_test": "Pay {amount} (test)",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free"
+  },
+  "address": {
+    "name": "Full name",
+    "phone": "Phone",
+    "line1": "House, street",
+    "line2": "Area, landmark (optional)",
+    "city": "City",
+    "pin": "PIN code",
+    "state": "State",
+    "default": "Use as my default address",
+    "save": "Save address",
+    "errors": {
+      "invalid_pin": "Please enter a valid 6-digit PIN code.",
+      "invalid_phone": "Please enter a valid phone number.",
+      "generic": "We couldn't save the address. Please check and try again."
+    }
+  },
+  "success": {
+    "confirming": "Confirming your payment…",
+    "title": "Thank you! Your order is confirmed.",
+    "order_number": "Order {n}",
+    "by": "Made by {maker}",
+    "karu_id": "You'll receive Karu ID {id} with your piece. Scan its tag to meet the maker.",
+    "refunded_item": "This piece sold out just before your payment — a full refund has been started.",
+    "see_proof": "See the proof",
+    "story_card": "Save story card",
+    "story_card_line": "Handmade by {maker} · Karu",
+    "track": "Track order",
+    "continue": "Continue shopping"
+  },
+  "auth": {
+    "title": "Log in or sign up",
+    "subtitle": "One code to your phone or email — no passwords.",
+    "tab_phone": "Phone",
+    "tab_email": "Email",
+    "phone_label": "Mobile number",
+    "phone_hint": "We'll send a 6-digit code by SMS.",
+    "email_label": "Email",
+    "send_code": "Send code",
+    "code_sent_to": "We sent a code to {dest}",
+    "use_code": "Fill it",
+    "dev_code": "Demo mode (no SMS provider): your code is {code}",
+    "code_label": "6-digit code",
+    "verify": "Continue",
+    "change": "Change number",
+    "resend_in": "Resend in {s}s",
+    "resend": "Resend code",
+    "terms_note": "By continuing you agree to Karu's Terms and Privacy Policy.",
+    "or": "or",
+    "errors": {
+      "generic": "Something went wrong. Please try again.",
+      "invalid_phone": "Please check the mobile number.",
+      "invalid_email": "Please check the email address.",
+      "otp_rate_limited": "Too many codes asked for. Please wait a few minutes.",
+      "resend_too_soon": "Please wait a moment before asking for another code.",
+      "otp_expired": "That code has expired. Please ask for a new one.",
+      "otp_too_many_attempts": "Too many tries. Please ask for a new code.",
+      "otp_not_found": "Please ask for a code first.",
+      "account_suspended": "This account is under review. Please contact Karu help.",
+      "account_deleted": "This account was deleted.",
+      "otp_wrong_code": "That code isn't right.",
+      "wrong_code_left": "That code isn't right. {n, plural, one {# try left} other {# tries left}}."
+    }
+  },
+  "account": {
+    "title": "Your account",
+    "your_name": "Your name",
+    "save": "Save",
+    "saved": "Saved",
+    "orders": "Orders & returns",
+    "wishlist": "Wishlist",
+    "following": "Makers you follow",
+    "requests": "Your “make this again” requests",
+    "addresses": "Addresses",
+    "reviews": "Reviews you wrote",
+    "settings": "Settings & privacy",
+    "notifications": "Notifications",
+    "artisan_dashboard": "Your maker dashboard",
+    "start_selling": "Start selling on Karu — free",
+    "staff_console": "Staff console",
+    "logout": "Log out",
+    "browse": "Browse handmade",
+    "wishlist_empty": "Nothing saved yet",
+    "following_empty": "You don't follow any makers yet",
+    "add": "Add address",
+    "no_addresses": "No addresses yet",
+    "default": "Default",
+    "edit": "Edit",
+    "delete": "Delete",
+    "no_reviews": "You haven't written any reviews yet",
+    "no_requests": "No requests yet",
+    "no_requests_body": "When a piece is out of stock, tap “Request this again” and the maker will reply.",
+    "req_qty": "{n, plural, one {# piece} other {# pieces}}",
+    "req_status": {
+      "open": "Waiting for the maker",
+      "replied": "The maker replied",
+      "accepted": "Accepted",
+      "declined": "The maker can't make this now",
+      "expired": "Expired"
+    },
+    "ready_in": "{n, plural, one {ready in # day} other {ready in # days}}"
+  },
+  "orders": {
+    "title": "Your orders",
+    "empty": "No orders yet",
+    "browse": "Browse handmade",
+    "order": "Order {n}",
+    "deliver_to": "Delivering to",
+    "status": {
+      "pending": "Awaiting payment",
+      "to_pack": "Being packed",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "return_requested": "Return requested",
+      "returned": "Returned",
+      "cancelled": "Cancelled",
+      "paid": "Paid",
+      "pending_payment": "Awaiting payment",
+      "partially_shipped": "Partly shipped",
+      "completed": "Completed",
+      "refunded": "Refunded"
+    },
+    "method": {
+      "upi": "Paid by UPI",
+      "card": "Paid by card",
+      "intl_card": "Paid by international card",
+      "netbanking": "Paid by netbanking",
+      "wallet": "Paid by wallet"
+    },
+    "timeline": {
+      "paid": "Paid",
+      "packing": "Maker is packing it",
+      "shipped": "Shipped",
+      "delivered": "Delivered"
+    },
+    "refund": "Refund {status} · {amount}",
+    "refund_status": {
+      "pending": "started",
+      "processed": "completed",
+      "failed": "pending with our team"
+    },
+    "received": "I received it",
+    "thanks_received": "Thank you! Enjoy your piece.",
+    "not_received": "Not received?",
+    "dispute_sent": "Thanks — our team will check with the courier and the maker.",
+    "write_review": "Write a review",
+    "return": "Return",
+    "not_returnable": "Not returnable (maker's choice)",
+    "return_until": "Return until {date}",
+    "return_reason": "Why are you returning it?",
+    "reasons": {
+      "not_as_described": "Not as described",
+      "damaged": "Arrived damaged",
+      "changed_mind": "Changed my mind",
+      "other": "Other"
+    },
+    "details": "Tell us more (optional)",
+    "photos": "Photos (optional)",
+    "return_note": "The maker will be told. Please ship it back; your refund is processed when they receive it.",
+    "request_return": "Request return",
+    "review_thanks": "Thank you for your review",
+    "rating": "Your rating",
+    "review_placeholder": "What did you like about the piece and the maker?",
+    "submit_review": "Post review"
+  },
+  "settings": {
+    "title": "Settings & privacy",
+    "notifications": "How should we reach you?",
+    "channel": {
+      "whatsapp": "WhatsApp",
+      "sms": "SMS",
+      "email": "Email",
+      "in_app": "In the app",
+      "followed_makers": "New pieces from makers I follow"
+    },
+    "language": "Language",
+    "your_data": "Your data",
+    "your_data_body": "Download everything Karu holds about you, or delete your account. Deleted accounts are erased after 30 days.",
+    "export": "Download my data",
+    "delete": "Delete my account",
+    "delete_confirm": "Your account will be closed now and your personal data erased after 30 days. Pieces you bought keep their Karu IDs.",
+    "delete_yes": "Yes, delete my account",
+    "deleted": "Your account has been deleted"
+  },
+  "business": {
+    "title": "Source handmade, in bulk",
+    "intro": "SHGs, co-operatives, NGOs, exporters and brands: tell us what you need. Karu brings the request to verified makers in that craft.",
+    "step1": "Tell us the product, quantity, target price and deadline.",
+    "step2": "Karu staff review it and publish an opportunity.",
+    "step3": "Verified makers in the category say how many they can make by your date.",
+    "step4": "Our team confirms the makers and coordinates the deal with you.",
+    "org": "Organisation",
+    "contact": "Your name",
+    "phone": "Phone",
+    "email": "Email",
+    "category": "Category",
+    "any_category": "Any / not sure",
+    "product_type": "Product",
+    "product_type_ph": "e.g. 200 handloom cotton stoles",
+    "description": "Details (sizes, colours, packaging)",
+    "quantity": "Quantity",
+    "target_price": "Target price per piece (₹)",
+    "deadline": "Needed by",
+    "submit": "Send request",
+    "privacy": "Your contact details are only seen by Karu staff.",
+    "thanks": "Thank you!",
+    "thanks_body": "Our team will review your request and get back to you within two working days.",
+    "rate_limited": "You've sent several requests already. Please try again later.",
+    "error": "We couldn't send the request. Please try again."
+  },
+  "impact": {
+    "title": "Our impact",
+    "intro": "Karu is free for makers: 0% commission. These numbers update every few minutes.",
+    "artisans": "makers on Karu",
+    "pieces_verified": "pieces Karu Verified",
+    "paid": "paid to makers",
+    "clusters": "craft clusters",
+    "states": "states",
+    "zero_commission": "Every rupee of the item price goes to the maker. Karu covers payment and verification costs during the pilot."
+  },
+  "errors_page": {
+    "not_found": "Page not found",
+    "not_found_body": "The page you're looking for doesn't exist or has moved.",
+    "home": "Go home"
+  },
+  "pages": {
+    "about": {
+      "title": "About Karu",
+      "lead": "Karu is an Indian handmade-goods marketplace where every maker has a Karu Passport and every piece has a Karu ID that proves it is genuinely handmade.",
+      "sections": [
+        {
+          "h": "The maker disappears",
+          "p": "Most listings say “Handmade – ₹1,800” with no proof of who made it, where, or whether the piece in the photo is the piece you receive. Power-loom copies are sold as handloom, and the people who keep crafts alive are invisible."
+        },
+        {
+          "h": "One photo and one voice note",
+          "p": "Makers shouldn't need to be photographers or copywriters. On Karu, a maker takes one photo and speaks for a minute in their own language. Karu writes the listing in their language, English and Hindi, cleans up the photo without inventing anything, and shows a fair price range from the live market."
+        },
+        {
+          "h": "Proof, not percentages",
+          "p": "Every piece goes through three checks: the photos, the maker's record, and a video of it being made. A piece is either Karu Verified or not verified yet. Buyers can scan the QR on the tag to see the proof."
+        },
+        {
+          "h": "Free for makers",
+          "p": "Makers pay nothing and keep 100% of the price. Payments are held safely until delivery and the return window close, then paid to the maker's bank or UPI."
+        },
+        {
+          "h": "Our promise",
+          "p": "We do not generate the product. We help the real product speak for itself."
+        }
+      ]
+    },
+    "verification_explained": {
+      "title": "How Karu verification works",
+      "lead": "Karu Verified means three independent checks agree that this piece was made by hand by this maker.",
+      "sections": [
+        {
+          "h": "1. The photos",
+          "p": "We look for the marks of hand work — uneven slubs in a weave, brush strokes, wheel marks, tool marks — and search the web to make sure the photos belong to this maker and haven't appeared elsewhere first."
+        },
+        {
+          "h": "2. The maker's record",
+          "p": "Verified identity (Aadhaar through DigiLocker, Pehchan artisan card, GI registration), past verified pieces, reviews and returns. New makers start with a neutral record — they can be verified on strong photos and a making video alone."
+        },
+        {
+          "h": "3. The making video",
+          "p": "The maker films this piece or batch being made: hands at work, the loom, wheel or tools, ending with the finished piece. We check the process, that it is the same piece as in the photos, and that the video isn't reused."
+        },
+        {
+          "h": "No video, no badge",
+          "p": "Without a making video a piece cannot be Karu Verified. It can still be sold, and buyers see “Not verified yet”."
+        },
+        {
+          "h": "Why no percentages?",
+          "p": "A number like “87% authentic” sounds precise but isn't. We show a clear verdict and the three checks in plain words. If later evidence shows a problem, the badge is withdrawn and anyone scanning a sold piece sees that."
+        },
+        {
+          "h": "Every piece has its own Karu ID",
+          "p": "Each physical piece gets a Karu ID (like KRU-8F29A1QZ) and a QR tag. Scanning it shows the piece's journey — made, listed, sold. If a sold piece's QR is copied onto a fake, the page shows the original photo and that it was already sold."
+        }
+      ]
+    },
+    "help": {
+      "title": "Help",
+      "lead": "Answers to common questions from buyers and makers.",
+      "sections": [
+        {
+          "h": "Where is my order?",
+          "p": "Open Account → Orders. You'll see when the maker packed and shipped your piece, with courier and tracking if they added them. Tap “I received it” when it arrives."
+        },
+        {
+          "h": "Returns",
+          "p": "If the maker accepts returns, you can request one within 7 days of delivery from your order page. Refunds go back to your original payment method once the maker receives the piece."
+        },
+        {
+          "h": "Scanning a Karu ID",
+          "p": "Point your phone camera at the QR on the tag. The Karu ID page opens in your browser — no app needed."
+        },
+        {
+          "h": "Selling on Karu",
+          "p": "Tap “Sell on Karu”, choose your language and log in with your phone. Add your first piece with one photo and a voice note. It's free, and you keep 100% of the price."
+        },
+        {
+          "h": "Contact us",
+          "p": "Use “Report a problem” on any piece, or write to help@karu.ai."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of use (summary)",
+      "lead": "This plain-language summary will be replaced by the full terms after legal review.",
+      "sections": [
+        {
+          "h": "Karu Passport and Karu IDs",
+          "p": "Karu grants each maker one Karu Passport and creates a Karu ID for every unit listed. Passports and IDs belong to Karu, which may suspend or revoke them for fraud or repeated misrepresentation."
+        },
+        {
+          "h": "Listings",
+          "p": "Makers must list only work they made themselves and must not use other people's photos or videos. Karu may edit photos only to clean them up (crop, background, light); it never creates product images."
+        },
+        {
+          "h": "Payments",
+          "p": "Buyers pay Karu through Razorpay. Karu passes 100% of the item price to the maker after delivery and, where returns are accepted, after the 7-day return window."
+        },
+        {
+          "h": "Prohibited items",
+          "p": "Wildlife products, ivory, and other items banned by Indian law may not be listed. Karu removes such listings."
+        },
+        {
+          "h": "Children",
+          "p": "Photos or videos showing children working are not allowed and will be removed."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy (summary)",
+      "lead": "Karu follows India's Digital Personal Data Protection Act, 2023. This summary will be replaced by the full policy after legal review.",
+      "sections": [
+        {
+          "h": "What we collect",
+          "p": "Phone or email, your name, and — for makers — your craft, place, photos, voice notes and making videos. Addresses are used only to deliver orders."
+        },
+        {
+          "h": "What is public",
+          "p": "For makers: your public name, photo, craft, village or town and district, story, and (if you allow) your voice clip and making videos. Your exact address and phone number are never shown."
+        },
+        {
+          "h": "Aadhaar",
+          "p": "Aadhaar is verified through DigiLocker by a licensed provider. Karu stores only that it was verified and the last 4 digits — never the full number or document."
+        },
+        {
+          "h": "Your choices",
+          "p": "You can hide your voice clip, change notification settings, download your data, or delete your account at any time from Settings. Personal data is erased 30 days after deletion."
+        },
+        {
+          "h": "Where data lives",
+          "p": "Data is stored in India and encrypted. We don't sell personal data."
+        }
+      ]
+    }
+  },
+  "sell": {
+    "nav": {
+      "badge": "Maker",
+      "main": "Maker menu",
+      "home": "Home",
+      "orders": "Orders",
+      "new": "Add a new product",
+      "requests": "Requests",
+      "me": "Me",
+      "notifications": "Notifications",
+      "products": "Products",
+      "payouts": "Payouts",
+      "passport": "Passport",
+      "help": "Help & Academy",
+      "settings": "Settings",
+      "new_product": "New Product",
+      "studio_title": "Artisan Workshop Studio",
+      "view_shop": "View Public Shop"
+    },
+    "queue": {
+      "offline": "Waiting for network — {n, plural, one {# product is} other {# products are}} saved on your phone",
+      "uploading": "Uploading {n, plural, one {# product} other {# products}}…",
+      "failed": "{n, plural, one {# product} other {# products}} didn't upload",
+      "retry": "Try again"
+    },
+    "start": {
+      "progress": "Step {n} of {total}",
+      "language_title": "Choose your language",
+      "language_body": "You can change it any time.",
+      "phone_title": "Your mobile number",
+      "phone_body": "We'll send you a code. No password needed.",
+      "name_q": "What is your name?",
+      "name_hint": "This name is shown to buyers. You can tap the mic and say it.",
+      "dob_q": "Your date of birth",
+      "dob_hint": "Only Karu sees this. You must be 18 or older to sell.",
+      "craft_q": "What do you make?",
+      "craft_other": "Something else? Say or type it",
+      "location_q": "Where do you work?",
+      "use_location": "Use my location",
+      "location_saved": "Location saved ✓",
+      "location_privacy": "Karu keeps only an approximate location (about 1 km). Buyers see your village or town and district — never your address.",
+      "pin": "PIN code",
+      "village": "Village or town",
+      "district": "District",
+      "state": "State",
+      "consent_title": "Before we start",
+      "consent_1": "Your photos, voice and making videos are used to check that your work is handmade.",
+      "consent_2": "Buyers can see your photos, name, village, story and making videos on your Karu ID pages.",
+      "consent_3": "Your voice clip is shown only if you want — you can hide it any time.",
+      "consent_4": "Selling on Karu is free. You keep 100% of the price.",
+      "consent_full": "Full text:",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "agree": "I agree — create my Karu Passport",
+      "next": "Next",
+      "skip": "Skip for now",
+      "errors": {
+        "must_be_adult": "You must be 18 or older to sell on Karu.",
+        "invalid_state": "Please choose your state from the list.",
+        "already_artisan": "You already have a Karu Passport.",
+        "location_denied": "We couldn't get your location. Please type your PIN code instead.",
+        "generic": "Something went wrong. Please try again."
+      }
+    },
+    "home": {
+      "greeting": "Namaste,",
+      "speak_summary": "You have {orders, plural, =0 {no orders to ship} one {# order to ship} other {# orders to ship}}. Money on the way: {money}.",
+      "views_today": "Views today",
+      "to_ship": "To ship",
+      "on_the_way": "On the way",
+      "banner": {
+        "orders_to_ship": "{n, plural, one {# order} other {# orders}} to ship",
+        "add_making_video": "Add a making video to get {n, plural, one {# product} other {# products}} verified",
+        "finish_payout_setup": "Finish payout setup to receive {amount}"
+      },
+      "completion": "Your profile is {pct}% done",
+      "missing": {
+        "photo": "Add a profile photo",
+        "story": "Tell buyers your story",
+        "crafts": "Add your craft",
+        "years": "Add your years of practice",
+        "location": "Add your district and state",
+        "languages": "Add the languages you speak",
+        "aadhaar": "Verify your Aadhaar",
+        "payout": "Add your bank or UPI for payments",
+        "name": "Add your name"
+      },
+      "dismiss": "Dismiss",
+      "saved_on_phone": "Saved on your phone",
+      "draft_waiting": "{n, plural, one {# photo} other {# photos}} waiting to upload",
+      "draft_failed": "Upload didn't finish ({n, plural, one {# photo} other {# photos}})",
+      "retry": "Try again",
+      "products": "Your products",
+      "new": "New",
+      "filter": {
+        "all": "All",
+        "published": "Live",
+        "not_verified": "Not verified yet",
+        "drafts": "Drafts",
+        "paused": "Paused"
+      },
+      "empty_title": "Add your first product",
+      "empty_body": "One photo and one voice note — Karu does the rest.",
+      "add_first": "Add your first product",
+      "untitled": "New product",
+      "status": {
+        "draft": "Draft",
+        "processing": "Being prepared",
+        "paused": "Paused"
+      },
+      "your_impact": "You have earned",
+      "impact_line": "{pieces, plural, one {# piece} other {# pieces}} sold to buyers in {cities, plural, one {# city} other {# cities}}",
+      "price": {
+        "below": "Below market",
+        "in_range": "Fair price",
+        "above": "Above market",
+        "unknown": "No price data yet"
+      },
+      "tour_1": "Welcome to Karu. Your Karu Passport is ready.",
+      "tour_2": "Tap the big plus button to add a product. Take a photo and tell us about it in your own words.",
+      "tour_3": "Add a short video of you making it to get Karu Verified."
+    },
+    "new": {
+      "photos_title": "Take photos of your product",
+      "tip_daylight": "Daylight",
+      "tip_plain": "Plain background",
+      "tip_whole": "Show the whole piece",
+      "too_dark": "One photo looks dark. Try again in daylight if you can.",
+      "photo_n": "Photo {n}",
+      "main_photo": "Main",
+      "remove_photo": "Remove photo",
+      "take_photo": "Take photo",
+      "add_photo": "Add photo",
+      "from_gallery": "Choose from gallery",
+      "photo_count": "{n} of {max} photos",
+      "next": "Next",
+      "voice_title": "Tell us about it",
+      "voice_prompt": "Tell us what it is, what it's made of, how long it took, and the price.",
+      "too_short": "That was very short. Please say a little more.",
+      "mic_denied": "Please allow the microphone, or skip and type instead.",
+      "record": "Start speaking",
+      "stop": "Stop",
+      "tap_to_speak": "Tap the mic and speak",
+      "tap_to_stop": "Tap to stop",
+      "recorded": "Recorded",
+      "we_heard": "We heard",
+      "rerecord": "Record again",
+      "continue": "Continue",
+      "skip_voice": "Skip — I'll type the details",
+      "sending": "Sending to Karu…",
+      "sending_body": "Your photos and voice are uploading.",
+      "waiting_network": "Waiting for network",
+      "saved_on_phone": "Saved on your phone. It will upload by itself when the network is back.",
+      "go_home": "Go to home",
+      "listening": "Karu is listening…",
+      "step": {
+        "listening": "Listening to your voice note",
+        "understanding": "Understanding your product",
+        "writing": "Writing your listing",
+        "enhancing_photos": "Cleaning up your photos",
+        "checking_prices": "Checking market prices"
+      },
+      "usually_20s": "This usually takes under 20 seconds.",
+      "open": "Open",
+      "already_published": "This product is already live."
+    },
+    "review": {
+      "title": "Check your listing",
+      "manual_fallback": "We couldn't fill everything from your voice note. Please check the details below — you can speak into any box.",
+      "note": {
+        "price": "We didn't catch the price. Please say it again or type it.",
+        "dimensions": "Please tell us the size.",
+        "material": "Please tell us what it is made of.",
+        "technique": "Please tell us how it is made.",
+        "generic": "Please check: {field}"
+      },
+      "photos": "Photos",
+      "cleaned_up": "Cleaned up",
+      "photos_note": "Karu creates 5 catalogue images from your photo, and you can remove any of them. Originals are kept for verification and proof.",
+      "catalogue_images": "Catalogue images",
+      "creating_catalogue_images": "Creating catalogue images…",
+      "remove_image": "Remove image",
+      "catalogue_note": "Marketplace-style catalogue images created from your photo. You can remove any image you do not want to use.",
+      "no_catalogue_images": "No catalogue images yet.",
+      "generate_now": "Generate catalogue images",
+      "name": "Name of the product",
+      "description": "Description",
+      "details": "Details",
+      "attr": {
+        "material": "Material",
+        "technique": "How it is made",
+        "dye": "Dye / colour source",
+        "colour": "Colours",
+        "length_m": "Length (metres)",
+        "height_cm": "Height (cm)",
+        "time_to_make_days": "Days to make",
+        "care": "Care",
+        "finish": "Finish",
+        "width_m": "Width (metres)",
+        "width_cm": "Width (cm)",
+        "depth_cm": "Depth (cm)",
+        "weight_g": "Weight (grams)"
+      },
+      "please_check": "please check",
+      "more_details": "Add more details",
+      "badge_nudge": "{craft} is a GI-tagged craft. Tell us how it is made to help it earn the Karu badge.",
+      "category": "Category",
+      "choose": "Choose…",
+      "craft": "Craft",
+      "no_craft": "No specific craft",
+      "price": "Your price",
+      "price_missing": "Please add your price.",
+      "use_price": "Use {price}",
+      "never_changes": "Karu never changes your price. You decide.",
+      "what_you_said": "What you said",
+      "browser_transcript": "Written down by your phone's speech recognition.",
+      "regenerate": "Write again",
+      "regenerate_all": "Write all again",
+      "regen_left": "{n, plural, one {# rewrite left today} other {# rewrites left today}}",
+      "regen_limit": "You've used today's rewrites for this product. You can still edit it yourself.",
+      "looks_good": "Looks good",
+      "error": "We couldn't save. Please try again."
+    },
+    "video": {
+      "add": "Add a making video",
+      "guide_hands": "Show your hands working on this piece or this batch.",
+      "guide_tools": "Show the loom, wheel or tools you use.",
+      "guide_end": "End by showing the finished piece clearly.",
+      "guide_children": "Please don't show children working.",
+      "uploading": "Uploading… {pct}%",
+      "too_long": "The video is longer than 5 minutes. Please record a shorter one.",
+      "too_short": "The video is shorter than 20 seconds. Please show a little more of the making.",
+      "too_big": "The video file is too big. Please record at a lower quality.",
+      "errors": {
+        "video_too_short": "The video is shorter than 20 seconds.",
+        "media_too_long": "The video is longer than 5 minutes.",
+        "unsupported_media_type": "This file type isn't supported. Please record with your phone camera.",
+        "upload": "The upload stopped. It will continue when you try again.",
+        "generic": "We couldn't add the video. Please try again."
+      }
+    },
+    "final": {
+      "title": "Almost done",
+      "quantity": "How many do you have ready?",
+      "quantity_hint": "Each piece gets its own Karu ID.",
+      "less": "One less",
+      "more": "One more",
+      "returnable": "Accept returns",
+      "returnable_nudge": "Listings that accept returns usually sell more. You decide.",
+      "get_verified": "Get Karu Verified",
+      "get_verified_body": "Add a short video of you making it. Verified products sell for more.",
+      "video_added": "Making video added ✓",
+      "video_later": "You can also add it later.",
+      "publish": "Publish",
+      "incomplete": "Please add the name, price, category and a photo first.",
+      "error": "We couldn't publish. Please try again."
+    },
+    "published": {
+      "title": "Your {title} is live!",
+      "ids_created": "{n, plural, one {# Karu ID created} other {# Karu IDs created}}",
+      "checking": "Checking… usually under 10 minutes. We'll tell you the result.",
+      "add_video_hint": "Add a making video to get Karu Verified.",
+      "share": "Share on WhatsApp and Instagram",
+      "get_verified": "Get Karu Verified",
+      "home": "Back to home"
+    },
+    "product": {
+      "paused": "Paused",
+      "tab": {
+        "overview": "Overview",
+        "price": "Price advice",
+        "verification": "Verification",
+        "edit": "Edit",
+        "stock": "Stock & Karu IDs",
+        "share": "Share",
+        "more": "More"
+      },
+      "price": "Price",
+      "in_stock": "In stock",
+      "views": "Views",
+      "sold": "Sold",
+      "revenue": "Sales",
+      "zero_commission": "You keep 100% — Karu takes no commission.",
+      "view_public": "See it as buyers do",
+      "no_advice": "No price advice yet. It appears after Karu checks the market.",
+      "updated": "Updated {ago}",
+      "price_updated": "Price updated",
+      "use_price": "Use {price}",
+      "you_decide": "Karu never changes your price. You decide.",
+      "add_stock": "Add more pieces",
+      "add": "Add",
+      "ids_created": "{n, plural, one {# Karu ID created} other {# Karu IDs created}}",
+      "print_tags": "Print QR tags (PDF)",
+      "unit": {
+        "available": "Available",
+        "reserved": "Reserved",
+        "sold": "Sold",
+        "returned": "Returned",
+        "retired": "Retired"
+      },
+      "relist": "Offer again",
+      "pause": "Pause (hide from buyers)",
+      "resume": "Show to buyers again",
+      "pause_note": "Paused products are hidden from search. Sold Karu IDs always stay valid.",
+      "syndicate_title": "Also list on… (demo)",
+      "syndicate_body": "Karu's agent fills the form on a demo seller account for you.",
+      "portal": {
+        "ondc": "ONDC",
+        "indiamart": "IndiaMART",
+        "coop": "Co-op store"
+      },
+      "watch_live": "Watch the agent live",
+      "open": "Open",
+      "syndicated": "Listed successfully",
+      "syndication_failed": "The agent couldn't finish. Please try again later.",
+      "delete": "Delete product",
+      "delete_confirm": "The product will be removed from Karu. Pieces already sold keep their Karu IDs forever.",
+      "delete_yes": "Yes, delete"
+    },
+    "verify": {
+      "l1": "Photos checked",
+      "l2": "Your record",
+      "l3": "Making video",
+      "l1_ok": "Your photos show handmade work.",
+      "l1_needs_work": "Retake photos in daylight, close to the handwork.",
+      "l1_under_review": "Our team is looking at this.",
+      "l1_pending": "Waiting to check",
+      "l2_ok": "Your record is good.",
+      "l2_needs_work": "Verify your Aadhaar to strengthen your record.",
+      "l2_under_review": "Our team is looking at this.",
+      "l2_pending": "Waiting to check",
+      "l3_ok": "Your making video is good.",
+      "l3_needs_work": "Show your hands working and the finished piece.",
+      "l3_missing": "Add a short video of you making it.",
+      "l3_under_review": "Our team is looking at this.",
+      "l3_pending": "Waiting to check",
+      "checking": "Checking… usually under 10 minutes. You can leave this page.",
+      "verified_body": "Verified on {date}. The badge is on all pieces of this batch.",
+      "under_review": "We couldn't verify this product. Our team will look into it.",
+      "whats_missing": "What to do next",
+      "go": "Go",
+      "add_video": "Add a making video",
+      "replace_video": "Add a new making video",
+      "video_received": "Video received — checking again",
+      "try_again": "Try again",
+      "errors": {
+        "already_checking": "Already checking. Please wait a few minutes.",
+        "generic": "Something went wrong. Please try again."
+      }
+    },
+    "share": {
+      "publish_first": "Publish your product to share it.",
+      "format": {
+        "9x16": "WhatsApp status",
+        "4x5": "Instagram post",
+        "clean": "Clean photo"
+      },
+      "preview": "Share image preview",
+      "clean_note": "For Amazon, Flipkart and other marketplaces: they don't allow logos or QR codes on photos. Put the printed QR tag in the parcel instead.",
+      "share_whatsapp": "Share",
+      "download": "Download image",
+      "instagram_hint": "For Instagram: download the image, then post it from the Instagram app.",
+      "copy": "Copy",
+      "copied": "Link copied"
+    },
+    "orders": {
+      "title": "Orders",
+      "tab": {
+        "to_pack": "To pack",
+        "shipped": "Shipped",
+        "delivered": "Delivered",
+        "returns": "Returns"
+      },
+      "empty": {
+        "to_pack": "No orders to pack right now",
+        "shipped": "Nothing on the way",
+        "delivered": "No delivered orders yet",
+        "returns": "No returns"
+      },
+      "buyer": "{name} · {city}",
+      "attach_tag": "Pack with Karu ID tag {id}",
+      "address": "Shipping address",
+      "shipped_on": "Shipped on {date}",
+      "mark_shipped": "Mark as shipped",
+      "courier": "Courier",
+      "tracking": "Tracking number",
+      "optional": "Optional",
+      "confirm_shipped": "Yes, it's shipped",
+      "shipped_toast": "Marked as shipped. The buyer has been told.",
+      "got_it_back": "I got it back",
+      "return_received": "Thank you. The refund has been started.",
+      "return": {
+        "requested": "Return requested",
+        "received": "Return received",
+        "refunded": "Refunded",
+        "rejected": "Return rejected"
+      },
+      "reason": {
+        "not_as_described": "not as described",
+        "damaged": "damaged",
+        "changed_mind": "changed mind",
+        "other": "other"
+      }
+    },
+    "payouts": {
+      "title": "Payments",
+      "on_the_way": "On the way",
+      "paid": "Paid to you",
+      "account": "Where you get paid",
+      "status": {
+        "none": "Not set up",
+        "pending_kyc": "Being checked",
+        "active": "Active",
+        "failed": "Needs attention"
+      },
+      "reason": {
+        "upi_settlement_not_enabled": "UPI payouts are being enabled. Please add a bank account for now, or our team will help you.",
+        "other": "Please check your details or contact Karu help."
+      },
+      "change": "Change account",
+      "hold_note": "Money is held safely until the buyer receives the piece and the return window ends, then sent to you.",
+      "history": "Payments",
+      "none": "No payments yet",
+      "release_on": "Will be sent on {date}",
+      "p_status": {
+        "awaiting_account": "Waiting for your account",
+        "created": "Preparing",
+        "on_hold": "Held until delivery",
+        "released": "Sent",
+        "settled": "In your account",
+        "failed": "Failed",
+        "reversed": "Refunded to buyer"
+      },
+      "bank": "Bank account",
+      "vpa": "UPI ID",
+      "vpa_hint": "Example: ramesh@okaxis",
+      "acc": "Account number",
+      "ifsc": "IFSC code",
+      "ifsc_hint": "11 letters and numbers, printed on your passbook or cheque.",
+      "holder": "Name on the account",
+      "save": "Save",
+      "saved": "Saved",
+      "check_details": "Please check the details.",
+      "error": "We couldn't save. Please try again.",
+      "kyc_note": "Our payment partner may ask for PAN or Aadhaar to confirm the account."
+    },
+    "passport": {
+      "title": "Your Karu Passport",
+      "kyc_done": "Aadhaar verified. Thank you!",
+      "kyc_failed": "Aadhaar was not verified. You can try again.",
+      "suspended": "Your passport is under review. Your products are hidden for now. Please contact Karu help.",
+      "you_are_verified": "Your passport is verified",
+      "how_to_verify": "How to get a verified passport",
+      "check_aadhaar": "Verify your Aadhaar",
+      "and_one_of": "and any one of these:",
+      "check_pehchan": "Pehchan artisan card verified",
+      "check_product": "At least one Karu Verified product",
+      "check_reviews": "{n} reviews with an average of {avg} or more (you have {have})",
+      "aadhaar": "Aadhaar",
+      "aadhaar_body": "Verify through DigiLocker. It takes about two minutes.",
+      "aadhaar_start": "Verify with DigiLocker",
+      "aadhaar_verified": "Verified (ending {last4})",
+      "aadhaar_privacy": "Karu keeps only the last 4 digits — never your full Aadhaar number or document.",
+      "pehchan": "Pehchan artisan card",
+      "pehchan_ph": "Card number",
+      "check": "Check",
+      "pehchan_sent": "We're checking your card. This can take a while.",
+      "pehchan_pending": "Being checked with the DC (Handicrafts) records…",
+      "pehchan_verified": "Pehchan card verified",
+      "pehchan_failed": "We couldn't match this card. Please check the number.",
+      "public_profile": "What buyers see",
+      "change_photo": "Change photo",
+      "uploading": "Uploading…",
+      "story": "Your story",
+      "story_hint": "A few lines about you and your craft. Tap the mic to speak.",
+      "voice_clip": "Your voice clip",
+      "record_voice": "Record your voice",
+      "rerecord_voice": "Record again",
+      "stop_recording": "Stop and save",
+      "show_voice": "Show my voice clip to buyers",
+      "show_voice_hint": "You can hide it any time.",
+      "years": "Years of practice",
+      "links": "Your own shop or Instagram links",
+      "links_hint": "One per line. Your photos found there won't be counted against you.",
+      "handle": "Your page address",
+      "handle_hint": "karu.ai/m/… — you can change it once.",
+      "handle_locked": "Already changed once.",
+      "save": "Save",
+      "saved": "Saved",
+      "error": "We couldn't save. Please try again.",
+      "handle_taken": "That address is taken. Please try another.",
+      "handle_already_edited": "You've already changed your address once.",
+      "payouts": "Payments",
+      "settings": "Settings",
+      "help": "Help"
+    },
+    "requests": {
+      "title": "Requests",
+      "make_again": "Make this again",
+      "bulk": "Bulk orders",
+      "none": "No requests yet",
+      "none_body": "When a buyer wants more of a sold-out product, it appears here.",
+      "wants": "{name} wants {n, plural, one {# more} other {# more}}",
+      "a_buyer": "A buyer",
+      "by_date": "By {date}",
+      "reply": "Reply with price and time",
+      "decline": "I can't",
+      "status": {
+        "open": "Waiting for you",
+        "replied": "You replied",
+        "accepted": "Accepted",
+        "declined": "Declined",
+        "expired": "Expired"
+      },
+      "price_each": "Price for each (₹)",
+      "ready_in": "Ready in how many days?",
+      "message": "Message (optional)",
+      "send": "Send",
+      "sent": "Sent to the buyer",
+      "bulk_verified_only": "Bulk orders are offered to makers with a verified passport.",
+      "no_bulk": "No bulk orders right now",
+      "bulk_line": "{n} pieces by {deadline}",
+      "target": "Target price {price} each",
+      "i_can_make": "I can make some",
+      "how_many": "How many can you make by the date?",
+      "can_meet": "I can finish by the date",
+      "join": "Send",
+      "joined": "You offered {n} pieces. Karu will call you."
+    },
+    "settings": {
+      "title": "Settings",
+      "language": "Language",
+      "voice_prompts": "Read screens aloud",
+      "voice_prompts_hint": "Karu speaks the main instruction on each screen.",
+      "show_voice": "Show my voice clip to buyers",
+      "show_voice_hint": "You can hide it any time.",
+      "notifications": "Messages from Karu",
+      "channel": {
+        "whatsapp": "WhatsApp",
+        "sms": "SMS",
+        "in_app": "In the app"
+      },
+      "export": "Download my data",
+      "logout": "Log out",
+      "delete": "Delete my account",
+      "delete_confirm": "Your products will be removed and your personal data erased after 30 days. Pieces already sold keep their Karu IDs.",
+      "delete_yes": "Yes, delete my account"
+    },
+    "help": {
+      "title": "Help",
+      "list": {
+        "title": "Add a product",
+        "body": "Tap the big plus. Take a photo in daylight, then tell Karu what it is, what it's made of, how long it took and the price."
+      },
+      "verify": {
+        "title": "Get Karu Verified",
+        "body": "Record a short video of your hands making the piece, with the loom, wheel or tools in view. End by showing the finished piece."
+      },
+      "price": {
+        "title": "Price advice",
+        "body": "Karu shows what shops charge for similar pieces. You always decide your price."
+      },
+      "ship": {
+        "title": "Ship an order",
+        "body": "Pack the piece with its Karu ID tag, then open Orders and tap Mark as shipped."
+      },
+      "payout": {
+        "title": "Get paid",
+        "body": "Add your bank account in Payments. Money comes after the buyer receives the piece and the return window ends."
+      },
+      "share": {
+        "title": "Share on WhatsApp",
+        "body": "Open a product, tap Share, choose WhatsApp status or Instagram post, and send."
+      },
+      "call": "Call Karu help",
+      "contact_soon": "A Karu helpline number will appear here during the pilot."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "none": "Nothing new"
+    },
+    "products": {
+      "title": "Workshop Products",
+      "subtitle": "Manage your handcrafted pieces, verification, and active inventory.",
+      "filter_all": "All Pieces",
+      "filter_published": "Live & Listed",
+      "filter_not_verified": "Verification Pending",
+      "filter_drafts": "Drafts",
+      "filter_paused": "Paused",
+      "empty_title": "No products found",
+      "empty_body": "Photograph a finished piece on your workbench to list it across India.",
+      "add_first": "List your first piece",
+      "manage": "Manage Piece"
+    }
+  }
+}
